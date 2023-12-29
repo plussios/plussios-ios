@@ -51,6 +51,17 @@
                ReferencedContainer = "container:Plussios.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2CF60D372B3EE3AD00C713C6"
+               BuildableName = "PlussiosCoreTests.xctest"
+               BlueprintName = "PlussiosCoreTests"
+               ReferencedContainer = "container:Plussios.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

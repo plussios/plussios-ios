@@ -11,7 +11,11 @@ import SwiftUI
 struct PlussiosApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SettingsView(
+                viewModel: SettingsViewModel(
+                    settingsStorage: SecureUserSettingsStorageFactory.shared.make()
+                )
+            )
         }
     }
 }

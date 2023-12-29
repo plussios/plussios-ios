@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CB26F6D2B3EF5FA0097B786 /* PlussiosCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF60D2F2B3EE3AD00C713C6 /* PlussiosCore.framework */; };
+		2CB26F6E2B3EF5FA0097B786 /* PlussiosCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF60D2F2B3EE3AD00C713C6 /* PlussiosCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2CB26F7C2B3EFE0F0097B786 /* DesignSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CB26F7B2B3EFE0F0097B786 /* DesignSystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CB26F7F2B3EFE0F0097B786 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB26F792B3EFE0F0097B786 /* DesignSystem.framework */; };
+		2CB26F802B3EFE0F0097B786 /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB26F792B3EFE0F0097B786 /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2CB26F842B3EFE1E0097B786 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB26F792B3EFE0F0097B786 /* DesignSystem.framework */; };
+		2CB26F852B3EFE1E0097B786 /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB26F792B3EFE0F0097B786 /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2CB26F892B3EFE450097B786 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB26F882B3EFE450097B786 /* Colors.swift */; };
+		2CB26F8B2B3EFF8A0097B786 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB26F8A2B3EFF8A0097B786 /* Colors.xcassets */; };
 		2CF60C802B3E9DB500C713C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF60C7F2B3E9DB500C713C6 /* Assets.xcassets */; };
 		2CF60C832B3E9DB500C713C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF60C822B3E9DB500C713C6 /* Preview Assets.xcassets */; };
 		2CF60C8D2B3E9DB500C713C6 /* PlussiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60C8C2B3E9DB500C713C6 /* PlussiosTests.swift */; };
 		2CF60C972B3E9DB500C713C6 /* PlussiosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60C962B3E9DB500C713C6 /* PlussiosUITests.swift */; };
 		2CF60C992B3E9DB500C713C6 /* PlussiosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60C982B3E9DB500C713C6 /* PlussiosUITestsLaunchTests.swift */; };
 		2CF60CA72B3E9E4100C713C6 /* PlussiosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60CA62B3E9E4100C713C6 /* PlussiosApp.swift */; };
-		2CF60CA92B3E9E6A00C713C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60CA82B3E9E6900C713C6 /* ContentView.swift */; };
+		2CF60CA92B3E9E6A00C713C6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60CA82B3E9E6900C713C6 /* SettingsView.swift */; };
 		2CF60CE52B3E9F3C00C713C6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF60CB02B3E9EB600C713C6 /* WidgetKit.framework */; };
 		2CF60CE62B3E9F3C00C713C6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF60CB22B3E9EB600C713C6 /* SwiftUI.framework */; };
 		2CF60CE92B3E9F3C00C713C6 /* PlussiosWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60CE82B3E9F3C00C713C6 /* PlussiosWidgetBundle.swift */; };
@@ -22,9 +31,59 @@
 		2CF60CEF2B3E9F3C00C713C6 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60CEE2B3E9F3C00C713C6 /* AppIntent.swift */; };
 		2CF60CF12B3E9F3D00C713C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF60CF02B3E9F3D00C713C6 /* Assets.xcassets */; };
 		2CF60CF52B3E9F3D00C713C6 /* PlussiosWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2CF60CE42B3E9F3C00C713C6 /* PlussiosWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2CF60D1F2B3ECBBE00C713C6 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D1E2B3ECBBE00C713C6 /* SettingsViewModel.swift */; };
+		2CF60D252B3ED33700C713C6 /* GSheetsClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D242B3ED33700C713C6 /* GSheetsClientFactory.swift */; };
+		2CF60D272B3ED3D900C713C6 /* SecureUserSettingsStorageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D262B3ED3D900C713C6 /* SecureUserSettingsStorageFactory.swift */; };
+		2CF60D332B3EE3AD00C713C6 /* PlussiosCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D322B3EE3AD00C713C6 /* PlussiosCore.docc */; };
+		2CF60D392B3EE3AE00C713C6 /* PlussiosCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF60D2F2B3EE3AD00C713C6 /* PlussiosCore.framework */; };
+		2CF60D402B3EE3AE00C713C6 /* PlussiosCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D3F2B3EE3AE00C713C6 /* PlussiosCoreTests.swift */; };
+		2CF60D412B3EE3AE00C713C6 /* PlussiosCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CF60D312B3EE3AD00C713C6 /* PlussiosCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CF60D442B3EE3AE00C713C6 /* PlussiosCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF60D2F2B3EE3AD00C713C6 /* PlussiosCore.framework */; };
+		2CF60D452B3EE3AE00C713C6 /* PlussiosCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF60D2F2B3EE3AD00C713C6 /* PlussiosCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2CF60D532B3EE60200C713C6 /* CurrentBudgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D522B3EE60200C713C6 /* CurrentBudgetProvider.swift */; };
+		2CF60D542B3EE60800C713C6 /* CurrentBudgetWidgetIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D502B3EE5A200C713C6 /* CurrentBudgetWidgetIntent.swift */; };
+		2CF60D552B3EE60800C713C6 /* CurrentBudgetWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D4E2B3EE58B00C713C6 /* CurrentBudgetWidget.swift */; };
+		2CF60D572B3EE62500C713C6 /* CurrentBudgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D562B3EE62500C713C6 /* CurrentBudgetEntry.swift */; };
+		2CF60D582B3EE81100C713C6 /* MoneyAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D022B3EC26800C713C6 /* MoneyAmount.swift */; };
+		2CF60D592B3EE81100C713C6 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D1A2B3EC92D00C713C6 /* Keychain.swift */; };
+		2CF60D5A2B3EE81100C713C6 /* SecureUserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D172B3EC83E00C713C6 /* SecureUserSettings.swift */; };
+		2CF60D5B2B3EE81100C713C6 /* SheetFullRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D282B3ED7BD00C713C6 /* SheetFullRange.swift */; };
+		2CF60D5C2B3EE81100C713C6 /* BudgetTotals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D092B3EC4AC00C713C6 /* BudgetTotals.swift */; };
+		2CF60D5D2B3EE81100C713C6 /* GSheetId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D212B3ECFFF00C713C6 /* GSheetId.swift */; };
+		2CF60D5E2B3EE81100C713C6 /* CurrentBudgetEntriesMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D062B3EC49700C713C6 /* CurrentBudgetEntriesMapper.swift */; };
+		2CF60D5F2B3EE81100C713C6 /* CategoryInfoMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D0B2B3EC51600C713C6 /* CategoryInfoMapper.swift */; };
+		2CF60D602B3EE81100C713C6 /* PlussiosGSheetClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60CFD2B3EBDC600C713C6 /* PlussiosGSheetClient.swift */; };
+		2CF60D612B3EE81100C713C6 /* MoneyAmountMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D0D2B3EC55A00C713C6 /* MoneyAmountMapper.swift */; };
+		2CF60D622B3EE81100C713C6 /* MapperError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D0F2B3EC5CD00C713C6 /* MapperError.swift */; };
+		2CF60D632B3EE81100C713C6 /* CategoryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D002B3EC1FD00C713C6 /* CategoryInfo.swift */; };
+		2CF60D642B3EE81100C713C6 /* SecureUserSettingsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D152B3EC81D00C713C6 /* SecureUserSettingsStorage.swift */; };
+		2CF60D652B3EE81100C713C6 /* GSheetsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60CFB2B3EBD6D00C713C6 /* GSheetsClient.swift */; };
+		2CF60D672B3EEEBF00C713C6 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D662B3EEEBF00C713C6 /* Assembly.swift */; };
+		2CF60D6A2B3EEF9700C713C6 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D692B3EEF9700C713C6 /* Secrets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2CB26F6F2B3EF5FA0097B786 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CF60C6E2B3E9DB300C713C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CF60D2E2B3EE3AD00C713C6;
+			remoteInfo = PlussiosCore;
+		};
+		2CB26F7D2B3EFE0F0097B786 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CF60C6E2B3E9DB300C713C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CB26F782B3EFE0F0097B786;
+			remoteInfo = DesignSystem;
+		};
+		2CB26F862B3EFE1E0097B786 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CF60C6E2B3E9DB300C713C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CB26F782B3EFE0F0097B786;
+			remoteInfo = DesignSystem;
+		};
 		2CF60C892B3E9DB500C713C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2CF60C6E2B3E9DB300C713C6 /* Project object */;
@@ -46,9 +105,42 @@
 			remoteGlobalIDString = 2CF60CE32B3E9F3C00C713C6;
 			remoteInfo = PlussiosWidgetExtension;
 		};
+		2CF60D3A2B3EE3AE00C713C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CF60C6E2B3E9DB300C713C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CF60D2E2B3EE3AD00C713C6;
+			remoteInfo = PlussiosCore;
+		};
+		2CF60D3C2B3EE3AE00C713C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CF60C6E2B3E9DB300C713C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CF60C752B3E9DB300C713C6;
+			remoteInfo = Plussios;
+		};
+		2CF60D422B3EE3AE00C713C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CF60C6E2B3E9DB300C713C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CF60D2E2B3EE3AD00C713C6;
+			remoteInfo = PlussiosCore;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		2CB26F712B3EF5FA0097B786 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2CB26F6E2B3EF5FA0097B786 /* PlussiosCore.framework in Embed Frameworks */,
+				2CB26F852B3EFE1E0097B786 /* DesignSystem.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CF60CC62B3E9EB800C713C6 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,9 +152,27 @@
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CF60D492B3EE3AE00C713C6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2CF60D452B3EE3AE00C713C6 /* PlussiosCore.framework in Embed Frameworks */,
+				2CB26F802B3EFE0F0097B786 /* DesignSystem.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2CB26F722B3EF73C0097B786 /* Plussios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Plussios.entitlements; sourceTree = "<group>"; };
+		2CB26F732B3EF7680097B786 /* PlussiosWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PlussiosWidgetExtension.entitlements; sourceTree = "<group>"; };
+		2CB26F792B3EFE0F0097B786 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CB26F7B2B3EFE0F0097B786 /* DesignSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignSystem.h; sourceTree = "<group>"; };
+		2CB26F882B3EFE450097B786 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		2CB26F8A2B3EFF8A0097B786 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		2CF60C762B3E9DB300C713C6 /* Plussios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plussios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF60C792B3E9DB300C713C6 /* PlussiosApp.swift.bak */ = {isa = PBXFileReference; lastKnownFileType = text; path = PlussiosApp.swift.bak; sourceTree = "<group>"; };
 		2CF60C7B2B3E9DB300C713C6 /* ContentView.swift.bak */ = {isa = PBXFileReference; lastKnownFileType = text; path = ContentView.swift.bak; sourceTree = "<group>"; };
@@ -75,7 +185,7 @@
 		2CF60C962B3E9DB500C713C6 /* PlussiosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlussiosUITests.swift; sourceTree = "<group>"; };
 		2CF60C982B3E9DB500C713C6 /* PlussiosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlussiosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2CF60CA62B3E9E4100C713C6 /* PlussiosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlussiosApp.swift; sourceTree = "<group>"; };
-		2CF60CA82B3E9E6900C713C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2CF60CA82B3E9E6900C713C6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		2CF60CB02B3E9EB600C713C6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		2CF60CB22B3E9EB600C713C6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		2CF60CE42B3E9F3C00C713C6 /* PlussiosWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PlussiosWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,13 +196,50 @@
 		2CF60CF02B3E9F3D00C713C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CF60CF22B3E9F3D00C713C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CF60CF92B3EB25600C713C6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2CF60CFB2B3EBD6D00C713C6 /* GSheetsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSheetsClient.swift; sourceTree = "<group>"; };
+		2CF60CFD2B3EBDC600C713C6 /* PlussiosGSheetClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlussiosGSheetClient.swift; sourceTree = "<group>"; };
+		2CF60D002B3EC1FD00C713C6 /* CategoryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInfo.swift; sourceTree = "<group>"; };
+		2CF60D022B3EC26800C713C6 /* MoneyAmount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyAmount.swift; sourceTree = "<group>"; };
+		2CF60D062B3EC49700C713C6 /* CurrentBudgetEntriesMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentBudgetEntriesMapper.swift; sourceTree = "<group>"; };
+		2CF60D092B3EC4AC00C713C6 /* BudgetTotals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetTotals.swift; sourceTree = "<group>"; };
+		2CF60D0B2B3EC51600C713C6 /* CategoryInfoMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInfoMapper.swift; sourceTree = "<group>"; };
+		2CF60D0D2B3EC55A00C713C6 /* MoneyAmountMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyAmountMapper.swift; sourceTree = "<group>"; };
+		2CF60D0F2B3EC5CD00C713C6 /* MapperError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapperError.swift; sourceTree = "<group>"; };
+		2CF60D152B3EC81D00C713C6 /* SecureUserSettingsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureUserSettingsStorage.swift; sourceTree = "<group>"; };
+		2CF60D172B3EC83E00C713C6 /* SecureUserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureUserSettings.swift; sourceTree = "<group>"; };
+		2CF60D1A2B3EC92D00C713C6 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		2CF60D1E2B3ECBBE00C713C6 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		2CF60D212B3ECFFF00C713C6 /* GSheetId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSheetId.swift; sourceTree = "<group>"; };
+		2CF60D242B3ED33700C713C6 /* GSheetsClientFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSheetsClientFactory.swift; sourceTree = "<group>"; };
+		2CF60D262B3ED3D900C713C6 /* SecureUserSettingsStorageFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureUserSettingsStorageFactory.swift; sourceTree = "<group>"; };
+		2CF60D282B3ED7BD00C713C6 /* SheetFullRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetFullRange.swift; sourceTree = "<group>"; };
+		2CF60D2F2B3EE3AD00C713C6 /* PlussiosCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlussiosCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF60D312B3EE3AD00C713C6 /* PlussiosCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlussiosCore.h; sourceTree = "<group>"; };
+		2CF60D322B3EE3AD00C713C6 /* PlussiosCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PlussiosCore.docc; sourceTree = "<group>"; };
+		2CF60D382B3EE3AD00C713C6 /* PlussiosCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlussiosCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF60D3F2B3EE3AE00C713C6 /* PlussiosCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlussiosCoreTests.swift; sourceTree = "<group>"; };
+		2CF60D4E2B3EE58B00C713C6 /* CurrentBudgetWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentBudgetWidget.swift; sourceTree = "<group>"; };
+		2CF60D502B3EE5A200C713C6 /* CurrentBudgetWidgetIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentBudgetWidgetIntent.swift; sourceTree = "<group>"; };
+		2CF60D522B3EE60200C713C6 /* CurrentBudgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentBudgetProvider.swift; sourceTree = "<group>"; };
+		2CF60D562B3EE62500C713C6 /* CurrentBudgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentBudgetEntry.swift; sourceTree = "<group>"; };
+		2CF60D662B3EEEBF00C713C6 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		2CF60D692B3EEF9700C713C6 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2CB26F762B3EFE0F0097B786 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CF60C732B3E9DB300C713C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CF60D442B3EE3AE00C713C6 /* PlussiosCore.framework in Frameworks */,
+				2CB26F7F2B3EFE0F0097B786 /* DesignSystem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,21 +262,52 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CF60CE62B3E9F3C00C713C6 /* SwiftUI.framework in Frameworks */,
+				2CB26F842B3EFE1E0097B786 /* DesignSystem.framework in Frameworks */,
 				2CF60CE52B3E9F3C00C713C6 /* WidgetKit.framework in Frameworks */,
+				2CB26F6D2B3EF5FA0097B786 /* PlussiosCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF60D2C2B3EE3AD00C713C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF60D352B3EE3AD00C713C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF60D392B3EE3AE00C713C6 /* PlussiosCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CB26F7A2B3EFE0F0097B786 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				2CB26F7B2B3EFE0F0097B786 /* DesignSystem.h */,
+				2CB26F882B3EFE450097B786 /* Colors.swift */,
+				2CB26F8A2B3EFF8A0097B786 /* Colors.xcassets */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
 		2CF60C6D2B3E9DB300C713C6 = {
 			isa = PBXGroup;
 			children = (
+				2CB26F732B3EF7680097B786 /* PlussiosWidgetExtension.entitlements */,
 				2CF60CF92B3EB25600C713C6 /* README.md */,
 				2CF60C782B3E9DB300C713C6 /* Plussios */,
 				2CF60C8B2B3E9DB500C713C6 /* PlussiosTests */,
 				2CF60C952B3E9DB500C713C6 /* PlussiosUITests */,
 				2CF60CE72B3E9F3C00C713C6 /* PlussiosWidget */,
+				2CF60D302B3EE3AD00C713C6 /* PlussiosCore */,
+				2CF60D3E2B3EE3AE00C713C6 /* PlussiosCoreTests */,
+				2CB26F7A2B3EFE0F0097B786 /* DesignSystem */,
 				2CF60CAF2B3E9EB600C713C6 /* Frameworks */,
 				2CF60C772B3E9DB300C713C6 /* Products */,
 			);
@@ -142,6 +320,9 @@
 				2CF60C882B3E9DB500C713C6 /* PlussiosTests.xctest */,
 				2CF60C922B3E9DB500C713C6 /* PlussiosUITests.xctest */,
 				2CF60CE42B3E9F3C00C713C6 /* PlussiosWidgetExtension.appex */,
+				2CF60D2F2B3EE3AD00C713C6 /* PlussiosCore.framework */,
+				2CF60D382B3EE3AD00C713C6 /* PlussiosCoreTests.xctest */,
+				2CB26F792B3EFE0F0097B786 /* DesignSystem.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,11 +330,11 @@
 		2CF60C782B3E9DB300C713C6 /* Plussios */ = {
 			isa = PBXGroup;
 			children = (
+				2CB26F722B3EF73C0097B786 /* Plussios.entitlements */,
+				2CF60D1C2B3EC96300C713C6 /* App */,
 				2CF60CA52B3E9E1000C713C6 /* Original */,
 				2CF60C7F2B3E9DB500C713C6 /* Assets.xcassets */,
 				2CF60C812B3E9DB500C713C6 /* Preview Content */,
-				2CF60CA62B3E9E4100C713C6 /* PlussiosApp.swift */,
-				2CF60CA82B3E9E6900C713C6 /* ContentView.swift */,
 			);
 			path = Plussios;
 			sourceTree = "<group>";
@@ -205,19 +386,217 @@
 		2CF60CE72B3E9F3C00C713C6 /* PlussiosWidget */ = {
 			isa = PBXGroup;
 			children = (
+				2CF60D4D2B3EE57400C713C6 /* CurrentBudgetWidget */,
 				2CF60CE82B3E9F3C00C713C6 /* PlussiosWidgetBundle.swift */,
 				2CF60CEA2B3E9F3C00C713C6 /* PlussiosWidgetLiveActivity.swift */,
 				2CF60CEC2B3E9F3C00C713C6 /* PlussiosWidget.swift */,
 				2CF60CEE2B3E9F3C00C713C6 /* AppIntent.swift */,
 				2CF60CF02B3E9F3D00C713C6 /* Assets.xcassets */,
 				2CF60CF22B3E9F3D00C713C6 /* Info.plist */,
+				2CF60D662B3EEEBF00C713C6 /* Assembly.swift */,
 			);
 			path = PlussiosWidget;
 			sourceTree = "<group>";
 		};
+		2CF60CFA2B3EBD5800C713C6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60D202B3ECFF500C713C6 /* Models */,
+				2CF60CFB2B3EBD6D00C713C6 /* GSheetsClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		2CF60CFF2B3EC1F100C713C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60D002B3EC1FD00C713C6 /* CategoryInfo.swift */,
+				2CF60D022B3EC26800C713C6 /* MoneyAmount.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2CF60D042B3EC47A00C713C6 /* PlussiosGSheet */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60D112B3EC7A600C713C6 /* Remote */,
+				2CF60D082B3EC49C00C713C6 /* Models */,
+				2CF60D052B3EC48500C713C6 /* Mappers */,
+			);
+			path = PlussiosGSheet;
+			sourceTree = "<group>";
+		};
+		2CF60D052B3EC48500C713C6 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60D0F2B3EC5CD00C713C6 /* MapperError.swift */,
+				2CF60D062B3EC49700C713C6 /* CurrentBudgetEntriesMapper.swift */,
+				2CF60D0B2B3EC51600C713C6 /* CategoryInfoMapper.swift */,
+				2CF60D0D2B3EC55A00C713C6 /* MoneyAmountMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		2CF60D082B3EC49C00C713C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60D092B3EC4AC00C713C6 /* BudgetTotals.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2CF60D112B3EC7A600C713C6 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60CFD2B3EBDC600C713C6 /* PlussiosGSheetClient.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		2CF60D132B3EC7F500C713C6 /* UserSettings */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60D142B3EC7FF00C713C6 /* Models */,
+				2CF60D152B3EC81D00C713C6 /* SecureUserSettingsStorage.swift */,
+			);
+			path = UserSettings;
+			sourceTree = "<group>";
+		};
+		2CF60D142B3EC7FF00C713C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60D172B3EC83E00C713C6 /* SecureUserSettings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2CF60D192B3EC91E00C713C6 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60D1A2B3EC92D00C713C6 /* Keychain.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		2CF60D1C2B3EC96300C713C6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60D232B3ED31A00C713C6 /* Factories */,
+				2CF60D1D2B3EC9FF00C713C6 /* SettingsView */,
+				2CF60CA62B3E9E4100C713C6 /* PlussiosApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2CF60D1D2B3EC9FF00C713C6 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60CA82B3E9E6900C713C6 /* SettingsView.swift */,
+				2CF60D1E2B3ECBBE00C713C6 /* SettingsViewModel.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		2CF60D202B3ECFF500C713C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60D212B3ECFFF00C713C6 /* GSheetId.swift */,
+				2CF60D282B3ED7BD00C713C6 /* SheetFullRange.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2CF60D232B3ED31A00C713C6 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60D242B3ED33700C713C6 /* GSheetsClientFactory.swift */,
+				2CF60D262B3ED3D900C713C6 /* SecureUserSettingsStorageFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		2CF60D302B3EE3AD00C713C6 /* PlussiosCore */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60D682B3EEF8100C713C6 /* Constants */,
+				2CF60D192B3EC91E00C713C6 /* Storage */,
+				2CF60D132B3EC7F500C713C6 /* UserSettings */,
+				2CF60D042B3EC47A00C713C6 /* PlussiosGSheet */,
+				2CF60CFF2B3EC1F100C713C6 /* Models */,
+				2CF60CFA2B3EBD5800C713C6 /* Networking */,
+				2CF60D312B3EE3AD00C713C6 /* PlussiosCore.h */,
+				2CF60D322B3EE3AD00C713C6 /* PlussiosCore.docc */,
+			);
+			path = PlussiosCore;
+			sourceTree = "<group>";
+		};
+		2CF60D3E2B3EE3AE00C713C6 /* PlussiosCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60D3F2B3EE3AE00C713C6 /* PlussiosCoreTests.swift */,
+			);
+			path = PlussiosCoreTests;
+			sourceTree = "<group>";
+		};
+		2CF60D4D2B3EE57400C713C6 /* CurrentBudgetWidget */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60D4E2B3EE58B00C713C6 /* CurrentBudgetWidget.swift */,
+				2CF60D502B3EE5A200C713C6 /* CurrentBudgetWidgetIntent.swift */,
+				2CF60D522B3EE60200C713C6 /* CurrentBudgetProvider.swift */,
+				2CF60D562B3EE62500C713C6 /* CurrentBudgetEntry.swift */,
+			);
+			path = CurrentBudgetWidget;
+			sourceTree = "<group>";
+		};
+		2CF60D682B3EEF8100C713C6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60D692B3EEF9700C713C6 /* Secrets.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		2CB26F742B3EFE0F0097B786 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB26F7C2B3EFE0F0097B786 /* DesignSystem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF60D2A2B3EE3AD00C713C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF60D412B3EE3AE00C713C6 /* PlussiosCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		2CB26F782B3EFE0F0097B786 /* DesignSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CB26F812B3EFE0F0097B786 /* Build configuration list for PBXNativeTarget "DesignSystem" */;
+			buildPhases = (
+				2CB26F742B3EFE0F0097B786 /* Headers */,
+				2CB26F752B3EFE0F0097B786 /* Sources */,
+				2CB26F762B3EFE0F0097B786 /* Frameworks */,
+				2CB26F772B3EFE0F0097B786 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesignSystem;
+			productName = DesignSystem;
+			productReference = 2CB26F792B3EFE0F0097B786 /* DesignSystem.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		2CF60C752B3E9DB300C713C6 /* Plussios */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CF60C9C2B3E9DB500C713C6 /* Build configuration list for PBXNativeTarget "Plussios" */;
@@ -226,11 +605,14 @@
 				2CF60C732B3E9DB300C713C6 /* Frameworks */,
 				2CF60C742B3E9DB300C713C6 /* Resources */,
 				2CF60CC62B3E9EB800C713C6 /* Embed Foundation Extensions */,
+				2CF60D492B3EE3AE00C713C6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				2CF60CF42B3E9F3D00C713C6 /* PBXTargetDependency */,
+				2CF60D432B3EE3AE00C713C6 /* PBXTargetDependency */,
+				2CB26F7E2B3EFE0F0097B786 /* PBXTargetDependency */,
 			);
 			name = Plussios;
 			productName = Plussios;
@@ -280,15 +662,55 @@
 				2CF60CE02B3E9F3C00C713C6 /* Sources */,
 				2CF60CE12B3E9F3C00C713C6 /* Frameworks */,
 				2CF60CE22B3E9F3C00C713C6 /* Resources */,
+				2CB26F712B3EF5FA0097B786 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2CB26F702B3EF5FA0097B786 /* PBXTargetDependency */,
+				2CB26F872B3EFE1E0097B786 /* PBXTargetDependency */,
 			);
 			name = PlussiosWidgetExtension;
 			productName = PlussiosWidgetExtension;
 			productReference = 2CF60CE42B3E9F3C00C713C6 /* PlussiosWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
+		};
+		2CF60D2E2B3EE3AD00C713C6 /* PlussiosCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF60D462B3EE3AE00C713C6 /* Build configuration list for PBXNativeTarget "PlussiosCore" */;
+			buildPhases = (
+				2CF60D2A2B3EE3AD00C713C6 /* Headers */,
+				2CF60D2B2B3EE3AD00C713C6 /* Sources */,
+				2CF60D2C2B3EE3AD00C713C6 /* Frameworks */,
+				2CF60D2D2B3EE3AD00C713C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlussiosCore;
+			productName = PlussiosCore;
+			productReference = 2CF60D2F2B3EE3AD00C713C6 /* PlussiosCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2CF60D372B3EE3AD00C713C6 /* PlussiosCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF60D4A2B3EE3AE00C713C6 /* Build configuration list for PBXNativeTarget "PlussiosCoreTests" */;
+			buildPhases = (
+				2CF60D342B3EE3AD00C713C6 /* Sources */,
+				2CF60D352B3EE3AD00C713C6 /* Frameworks */,
+				2CF60D362B3EE3AD00C713C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CF60D3B2B3EE3AE00C713C6 /* PBXTargetDependency */,
+				2CF60D3D2B3EE3AE00C713C6 /* PBXTargetDependency */,
+			);
+			name = PlussiosCoreTests;
+			productName = PlussiosCoreTests;
+			productReference = 2CF60D382B3EE3AD00C713C6 /* PlussiosCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -300,6 +722,10 @@
 				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
+					2CB26F782B3EFE0F0097B786 = {
+						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
+					};
 					2CF60C752B3E9DB300C713C6 = {
 						CreatedOnToolsVersion = 15.1;
 						LastSwiftMigration = 1510;
@@ -314,6 +740,13 @@
 					};
 					2CF60CE32B3E9F3C00C713C6 = {
 						CreatedOnToolsVersion = 15.1;
+					};
+					2CF60D2E2B3EE3AD00C713C6 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					2CF60D372B3EE3AD00C713C6 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 2CF60C752B3E9DB300C713C6;
 					};
 				};
 			};
@@ -334,11 +767,22 @@
 				2CF60C872B3E9DB500C713C6 /* PlussiosTests */,
 				2CF60C912B3E9DB500C713C6 /* PlussiosUITests */,
 				2CF60CE32B3E9F3C00C713C6 /* PlussiosWidgetExtension */,
+				2CF60D2E2B3EE3AD00C713C6 /* PlussiosCore */,
+				2CF60D372B3EE3AD00C713C6 /* PlussiosCoreTests */,
+				2CB26F782B3EFE0F0097B786 /* DesignSystem */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2CB26F772B3EFE0F0097B786 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB26F8B2B3EFF8A0097B786 /* Colors.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CF60C742B3E9DB300C713C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,15 +814,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CF60D2D2B3EE3AD00C713C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF60D362B3EE3AD00C713C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2CB26F752B3EFE0F0097B786 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB26F892B3EFE450097B786 /* Colors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CF60C722B3E9DB300C713C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CF60CA92B3E9E6A00C713C6 /* ContentView.swift in Sources */,
+				2CF60D252B3ED33700C713C6 /* GSheetsClientFactory.swift in Sources */,
+				2CF60CA92B3E9E6A00C713C6 /* SettingsView.swift in Sources */,
+				2CF60D1F2B3ECBBE00C713C6 /* SettingsViewModel.swift in Sources */,
 				2CF60CA72B3E9E4100C713C6 /* PlussiosApp.swift in Sources */,
+				2CF60D272B3ED3D900C713C6 /* SecureUserSettingsStorageFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,16 +872,67 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CF60D532B3EE60200C713C6 /* CurrentBudgetProvider.swift in Sources */,
 				2CF60CEB2B3E9F3C00C713C6 /* PlussiosWidgetLiveActivity.swift in Sources */,
+				2CF60D542B3EE60800C713C6 /* CurrentBudgetWidgetIntent.swift in Sources */,
+				2CF60D572B3EE62500C713C6 /* CurrentBudgetEntry.swift in Sources */,
+				2CF60D672B3EEEBF00C713C6 /* Assembly.swift in Sources */,
+				2CF60D552B3EE60800C713C6 /* CurrentBudgetWidget.swift in Sources */,
 				2CF60CEF2B3E9F3C00C713C6 /* AppIntent.swift in Sources */,
 				2CF60CE92B3E9F3C00C713C6 /* PlussiosWidgetBundle.swift in Sources */,
 				2CF60CED2B3E9F3C00C713C6 /* PlussiosWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CF60D2B2B3EE3AD00C713C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF60D602B3EE81100C713C6 /* PlussiosGSheetClient.swift in Sources */,
+				2CF60D6A2B3EEF9700C713C6 /* Secrets.swift in Sources */,
+				2CF60D5E2B3EE81100C713C6 /* CurrentBudgetEntriesMapper.swift in Sources */,
+				2CF60D582B3EE81100C713C6 /* MoneyAmount.swift in Sources */,
+				2CF60D5C2B3EE81100C713C6 /* BudgetTotals.swift in Sources */,
+				2CF60D632B3EE81100C713C6 /* CategoryInfo.swift in Sources */,
+				2CF60D5F2B3EE81100C713C6 /* CategoryInfoMapper.swift in Sources */,
+				2CF60D612B3EE81100C713C6 /* MoneyAmountMapper.swift in Sources */,
+				2CF60D332B3EE3AD00C713C6 /* PlussiosCore.docc in Sources */,
+				2CF60D622B3EE81100C713C6 /* MapperError.swift in Sources */,
+				2CF60D5A2B3EE81100C713C6 /* SecureUserSettings.swift in Sources */,
+				2CF60D642B3EE81100C713C6 /* SecureUserSettingsStorage.swift in Sources */,
+				2CF60D652B3EE81100C713C6 /* GSheetsClient.swift in Sources */,
+				2CF60D5B2B3EE81100C713C6 /* SheetFullRange.swift in Sources */,
+				2CF60D592B3EE81100C713C6 /* Keychain.swift in Sources */,
+				2CF60D5D2B3EE81100C713C6 /* GSheetId.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF60D342B3EE3AD00C713C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF60D402B3EE3AE00C713C6 /* PlussiosCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2CB26F702B3EF5FA0097B786 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CF60D2E2B3EE3AD00C713C6 /* PlussiosCore */;
+			targetProxy = 2CB26F6F2B3EF5FA0097B786 /* PBXContainerItemProxy */;
+		};
+		2CB26F7E2B3EFE0F0097B786 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CB26F782B3EFE0F0097B786 /* DesignSystem */;
+			targetProxy = 2CB26F7D2B3EFE0F0097B786 /* PBXContainerItemProxy */;
+		};
+		2CB26F872B3EFE1E0097B786 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CB26F782B3EFE0F0097B786 /* DesignSystem */;
+			targetProxy = 2CB26F862B3EFE1E0097B786 /* PBXContainerItemProxy */;
+		};
 		2CF60C8A2B3E9DB500C713C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2CF60C752B3E9DB300C713C6 /* Plussios */;
@@ -428,9 +948,95 @@
 			target = 2CF60CE32B3E9F3C00C713C6 /* PlussiosWidgetExtension */;
 			targetProxy = 2CF60CF32B3E9F3D00C713C6 /* PBXContainerItemProxy */;
 		};
+		2CF60D3B2B3EE3AE00C713C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CF60D2E2B3EE3AD00C713C6 /* PlussiosCore */;
+			targetProxy = 2CF60D3A2B3EE3AE00C713C6 /* PBXContainerItemProxy */;
+		};
+		2CF60D3D2B3EE3AE00C713C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CF60C752B3E9DB300C713C6 /* Plussios */;
+			targetProxy = 2CF60D3C2B3EE3AE00C713C6 /* PBXContainerItemProxy */;
+		};
+		2CF60D432B3EE3AE00C713C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CF60D2E2B3EE3AD00C713C6 /* PlussiosCore */;
+			targetProxy = 2CF60D422B3EE3AE00C713C6 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		2CB26F822B3EFE0F0097B786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5C9TGFA48W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.plussios.DesignSystem;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2CB26F832B3EFE0F0097B786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5C9TGFA48W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.plussios.DesignSystem;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		2CF60C9A2B3E9DB500C713C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -557,6 +1163,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Plussios/Plussios.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Plussios/Preview Content\"";
@@ -590,6 +1197,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Plussios/Plussios.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Plussios/Preview Content\"";
@@ -698,6 +1306,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PlussiosWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5C9TGFA48W;
@@ -726,6 +1335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PlussiosWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5C9TGFA48W;
@@ -749,9 +1359,126 @@
 			};
 			name = Release;
 		};
+		2CF60D472B3EE3AE00C713C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5C9TGFA48W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.plussios.PlussiosCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2CF60D482B3EE3AE00C713C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5C9TGFA48W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.plussios.PlussiosCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2CF60D4B2B3EE3AE00C713C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5C9TGFA48W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plussios.PlussiosCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Plussios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Plussios";
+			};
+			name = Debug;
+		};
+		2CF60D4C2B3EE3AE00C713C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5C9TGFA48W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plussios.PlussiosCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Plussios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Plussios";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2CB26F812B3EFE0F0097B786 /* Build configuration list for PBXNativeTarget "DesignSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CB26F822B3EFE0F0097B786 /* Debug */,
+				2CB26F832B3EFE0F0097B786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2CF60C712B3E9DB300C713C6 /* Build configuration list for PBXProject "Plussios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -793,6 +1520,24 @@
 			buildConfigurations = (
 				2CF60CF72B3E9F3D00C713C6 /* Debug */,
 				2CF60CF82B3E9F3D00C713C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CF60D462B3EE3AE00C713C6 /* Build configuration list for PBXNativeTarget "PlussiosCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF60D472B3EE3AE00C713C6 /* Debug */,
+				2CF60D482B3EE3AE00C713C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CF60D4A2B3EE3AE00C713C6 /* Build configuration list for PBXNativeTarget "PlussiosCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF60D4B2B3EE3AE00C713C6 /* Debug */,
+				2CF60D4C2B3EE3AE00C713C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

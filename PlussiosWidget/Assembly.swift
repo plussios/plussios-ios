@@ -15,12 +15,13 @@ final class Assembly {
     let keychain: KeychainProtocol
     let userSettingsStorage: SecureUserSettingsStorageProtocol
     let gSheetsClient: GSheetsClientProtocol
-    let plussiosGSheetClient: PlussiosGSheetClientProtocol
+    let plussiosClient: PlussiosClientProtocol
 
     private init() {
         keychain = Keychain()
         userSettingsStorage = SecureUserSettingsStorage(keychain: keychain)
         gSheetsClient = GSheetsClient(apiKey: Secrets.shared.gSheetsApiKey)
-        plussiosGSheetClient = PlussiosGSheetClient(gSheetClient: gSheetsClient)
+//        plussiosClient = PlussiosGSheetClient(gSheetClient: gSheetsClient)
+        plussiosClient = PlussiosApiClient()
     }
 }

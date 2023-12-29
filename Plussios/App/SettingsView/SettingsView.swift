@@ -60,8 +60,7 @@ struct SettingsView: View {
             }
             guard let sheetId else { return }
 
-            let gSheetsClient = GSheetsClientFactory.shared.makeClient()
-            let client = PlussiosGSheetClient(gSheetClient: gSheetsClient)
+            let client = PlussiosApiClient()
 
             do {
                 let budget = try await client.loadCurrentBudget(sheetId: sheetId)

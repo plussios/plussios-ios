@@ -15,6 +15,6 @@ public final class CategoryInfoMapper: CategoryInfoMapperProtocol {
     public init() {}
 
     public func mapFromGSheet(_ category: String) throws -> CategoryInfo {
-        CategoryInfo(id: category)
+        CategoryInfo(id: category, name: category)
     }
 }

@@ -67,13 +67,13 @@ struct CurrentBudgetTotalsEntryCompactView: View {
 struct CurrentBudgetWidget: Widget {
     let kind: String = "CurrentBudgetWidget"
     private let settingsStorage: SecureUserSettingsStorageProtocol
-    private let plussiosClient: PlussiosGSheetClientProtocol
+    private let plussiosClient: PlussiosClientProtocol
 
     init() {
         let assembly = Assembly.shared
 
         settingsStorage = assembly.userSettingsStorage
-        plussiosClient = assembly.plussiosGSheetClient
+        plussiosClient = assembly.plussiosClient
     }
 
     var body: some WidgetConfiguration {
@@ -180,6 +180,9 @@ private let mockEntries: [BudgetTotals.Entry] = [
 
 private extension BudgetTotals.Entry {
     static func simple(_ categoryName: String, _ amount: String) -> BudgetTotals.Entry {
-        BudgetTotals.Entry(category: CategoryInfo(id: categoryName), balanceString: amount)
+        BudgetTotals.Entry(
+            category: CategoryInfo(id: categoryName, name: categoryName),
+            balanceString: amount
+        )
     }
 }

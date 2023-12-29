@@ -11,7 +11,7 @@ public struct BudgetTotals {
     public let date: Date
     public let entries: [Entry]
 
-    public struct Entry: CustomStringConvertible {
+    public struct Entry: CustomStringConvertible, Decodable {
         public let category: CategoryInfo
 //        let balance: MoneyAmount
         // Load the string before we add a complication of parsing the actual amount from the string

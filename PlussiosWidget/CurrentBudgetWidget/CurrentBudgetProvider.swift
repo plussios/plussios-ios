@@ -25,9 +25,9 @@ enum CurrentBudgetProviderError: Error {
 
 struct CurrentBudgetProvider: AppIntentTimelineProvider {
     private let settingsStorage: SecureUserSettingsStorageProtocol
-    private let plussiosClient: PlussiosGSheetClientProtocol
+    private let plussiosClient: PlussiosClientProtocol
 
-    init(settingsStorage: SecureUserSettingsStorageProtocol, plussiosClient: PlussiosGSheetClientProtocol) {
+    init(settingsStorage: SecureUserSettingsStorageProtocol, plussiosClient: PlussiosClientProtocol) {
         self.settingsStorage = settingsStorage
         self.plussiosClient = plussiosClient
     }

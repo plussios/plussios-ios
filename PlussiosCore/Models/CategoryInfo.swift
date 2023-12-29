@@ -7,19 +7,19 @@
 
 import Foundation
 
-public struct CategoryInfo: CustomStringConvertible {
+public struct CategoryInfo: CustomStringConvertible, Codable {
     public typealias Id = String
 
     public let id: Id
+    public let name: String
 
-    public var name: String { id }
-
-    public init(id: Id) {
+    public init(id: Id, name: String) {
         self.id = id
+        self.name = name
     }
 
     public var description: String {
-        return id
+        return "\(name) (\(id))"
     }
 }
 

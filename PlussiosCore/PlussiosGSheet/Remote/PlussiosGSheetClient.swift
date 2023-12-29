@@ -7,11 +7,7 @@
 
 import Foundation
 
-public protocol PlussiosGSheetClientProtocol {
-    func loadCurrentBudget(sheetId: GSheetId) async throws -> BudgetTotals
-}
-
-public final class PlussiosGSheetClient: PlussiosGSheetClientProtocol {
+public final class PlussiosGSheetClient: PlussiosClientProtocol {
     private enum Constants {
         static let currentBudgetSheetName = "BudgetNow"
     }

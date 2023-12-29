@@ -16,6 +16,8 @@
 		2CB26F852B3EFE1E0097B786 /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB26F792B3EFE0F0097B786 /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2CB26F892B3EFE450097B786 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB26F882B3EFE450097B786 /* Colors.swift */; };
 		2CB26F8B2B3EFF8A0097B786 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB26F8A2B3EFF8A0097B786 /* Colors.xcassets */; };
+		2CB26F8D2B3F655F0097B786 /* PlussiosClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB26F8C2B3F655F0097B786 /* PlussiosClientProtocol.swift */; };
+		2CB26F8F2B3F657A0097B786 /* PlussiosApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB26F8E2B3F657A0097B786 /* PlussiosApiClient.swift */; };
 		2CF60C802B3E9DB500C713C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF60C7F2B3E9DB500C713C6 /* Assets.xcassets */; };
 		2CF60C832B3E9DB500C713C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF60C822B3E9DB500C713C6 /* Preview Assets.xcassets */; };
 		2CF60C8D2B3E9DB500C713C6 /* PlussiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60C8C2B3E9DB500C713C6 /* PlussiosTests.swift */; };
@@ -173,6 +175,9 @@
 		2CB26F7B2B3EFE0F0097B786 /* DesignSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignSystem.h; sourceTree = "<group>"; };
 		2CB26F882B3EFE450097B786 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		2CB26F8A2B3EFF8A0097B786 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		2CB26F8C2B3F655F0097B786 /* PlussiosClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlussiosClientProtocol.swift; sourceTree = "<group>"; };
+		2CB26F8E2B3F657A0097B786 /* PlussiosApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlussiosApiClient.swift; sourceTree = "<group>"; };
+		2CB26F902B3F6B680097B786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CF60C762B3E9DB300C713C6 /* Plussios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plussios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF60C792B3E9DB300C713C6 /* PlussiosApp.swift.bak */ = {isa = PBXFileReference; lastKnownFileType = text; path = PlussiosApp.swift.bak; sourceTree = "<group>"; };
 		2CF60C7B2B3E9DB300C713C6 /* ContentView.swift.bak */ = {isa = PBXFileReference; lastKnownFileType = text; path = ContentView.swift.bak; sourceTree = "<group>"; };
@@ -335,6 +340,7 @@
 				2CF60CA52B3E9E1000C713C6 /* Original */,
 				2CF60C7F2B3E9DB500C713C6 /* Assets.xcassets */,
 				2CF60C812B3E9DB500C713C6 /* Preview Content */,
+				2CB26F902B3F6B680097B786 /* Info.plist */,
 			);
 			path = Plussios;
 			sourceTree = "<group>";
@@ -449,6 +455,8 @@
 			isa = PBXGroup;
 			children = (
 				2CF60CFD2B3EBDC600C713C6 /* PlussiosGSheetClient.swift */,
+				2CB26F8C2B3F655F0097B786 /* PlussiosClientProtocol.swift */,
+				2CB26F8E2B3F657A0097B786 /* PlussiosApiClient.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -891,6 +899,7 @@
 				2CF60D602B3EE81100C713C6 /* PlussiosGSheetClient.swift in Sources */,
 				2CF60D6A2B3EEF9700C713C6 /* Secrets.swift in Sources */,
 				2CF60D5E2B3EE81100C713C6 /* CurrentBudgetEntriesMapper.swift in Sources */,
+				2CB26F8F2B3F657A0097B786 /* PlussiosApiClient.swift in Sources */,
 				2CF60D582B3EE81100C713C6 /* MoneyAmount.swift in Sources */,
 				2CF60D5C2B3EE81100C713C6 /* BudgetTotals.swift in Sources */,
 				2CF60D632B3EE81100C713C6 /* CategoryInfo.swift in Sources */,
@@ -903,6 +912,7 @@
 				2CF60D652B3EE81100C713C6 /* GSheetsClient.swift in Sources */,
 				2CF60D5B2B3EE81100C713C6 /* SheetFullRange.swift in Sources */,
 				2CF60D592B3EE81100C713C6 /* Keychain.swift in Sources */,
+				2CB26F8D2B3F655F0097B786 /* PlussiosClientProtocol.swift in Sources */,
 				2CF60D5D2B3EE81100C713C6 /* GSheetId.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1170,6 +1180,7 @@
 				DEVELOPMENT_TEAM = 5C9TGFA48W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Plussios/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1204,6 +1215,7 @@
 				DEVELOPMENT_TEAM = 5C9TGFA48W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Plussios/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

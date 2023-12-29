@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2CF60C7A2B3E9DB300C713C6 /* PlussiosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60C792B3E9DB300C713C6 /* PlussiosApp.swift */; };
-		2CF60C7C2B3E9DB300C713C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60C7B2B3E9DB300C713C6 /* ContentView.swift */; };
-		2CF60C7E2B3E9DB300C713C6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60C7D2B3E9DB300C713C6 /* Item.swift */; };
 		2CF60C802B3E9DB500C713C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF60C7F2B3E9DB500C713C6 /* Assets.xcassets */; };
 		2CF60C832B3E9DB500C713C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF60C822B3E9DB500C713C6 /* Preview Assets.xcassets */; };
 		2CF60C8D2B3E9DB500C713C6 /* PlussiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60C8C2B3E9DB500C713C6 /* PlussiosTests.swift */; };
 		2CF60C972B3E9DB500C713C6 /* PlussiosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60C962B3E9DB500C713C6 /* PlussiosUITests.swift */; };
 		2CF60C992B3E9DB500C713C6 /* PlussiosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60C982B3E9DB500C713C6 /* PlussiosUITestsLaunchTests.swift */; };
+		2CF60CA72B3E9E4100C713C6 /* PlussiosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60CA62B3E9E4100C713C6 /* PlussiosApp.swift */; };
+		2CF60CA92B3E9E6A00C713C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60CA82B3E9E6900C713C6 /* ContentView.swift */; };
+		2CF60CE52B3E9F3C00C713C6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF60CB02B3E9EB600C713C6 /* WidgetKit.framework */; };
+		2CF60CE62B3E9F3C00C713C6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF60CB22B3E9EB600C713C6 /* SwiftUI.framework */; };
+		2CF60CE92B3E9F3C00C713C6 /* PlussiosWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60CE82B3E9F3C00C713C6 /* PlussiosWidgetBundle.swift */; };
+		2CF60CEB2B3E9F3C00C713C6 /* PlussiosWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60CEA2B3E9F3C00C713C6 /* PlussiosWidgetLiveActivity.swift */; };
+		2CF60CED2B3E9F3C00C713C6 /* PlussiosWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60CEC2B3E9F3C00C713C6 /* PlussiosWidget.swift */; };
+		2CF60CEF2B3E9F3C00C713C6 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60CEE2B3E9F3C00C713C6 /* AppIntent.swift */; };
+		2CF60CF12B3E9F3D00C713C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF60CF02B3E9F3D00C713C6 /* Assets.xcassets */; };
+		2CF60CF52B3E9F3D00C713C6 /* PlussiosWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2CF60CE42B3E9F3C00C713C6 /* PlussiosWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,13 +39,34 @@
 			remoteGlobalIDString = 2CF60C752B3E9DB300C713C6;
 			remoteInfo = Plussios;
 		};
+		2CF60CF32B3E9F3D00C713C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CF60C6E2B3E9DB300C713C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CF60CE32B3E9F3C00C713C6;
+			remoteInfo = PlussiosWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2CF60CC62B3E9EB800C713C6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2CF60CF52B3E9F3D00C713C6 /* PlussiosWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2CF60C762B3E9DB300C713C6 /* Plussios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plussios.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CF60C792B3E9DB300C713C6 /* PlussiosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlussiosApp.swift; sourceTree = "<group>"; };
-		2CF60C7B2B3E9DB300C713C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2CF60C7D2B3E9DB300C713C6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		2CF60C792B3E9DB300C713C6 /* PlussiosApp.swift.bak */ = {isa = PBXFileReference; lastKnownFileType = text; path = PlussiosApp.swift.bak; sourceTree = "<group>"; };
+		2CF60C7B2B3E9DB300C713C6 /* ContentView.swift.bak */ = {isa = PBXFileReference; lastKnownFileType = text; path = ContentView.swift.bak; sourceTree = "<group>"; };
+		2CF60C7D2B3E9DB300C713C6 /* Item.swift.bak */ = {isa = PBXFileReference; lastKnownFileType = text; path = Item.swift.bak; sourceTree = "<group>"; };
 		2CF60C7F2B3E9DB500C713C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CF60C822B3E9DB500C713C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2CF60C882B3E9DB500C713C6 /* PlussiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlussiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +74,18 @@
 		2CF60C922B3E9DB500C713C6 /* PlussiosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlussiosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF60C962B3E9DB500C713C6 /* PlussiosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlussiosUITests.swift; sourceTree = "<group>"; };
 		2CF60C982B3E9DB500C713C6 /* PlussiosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlussiosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2CF60CA62B3E9E4100C713C6 /* PlussiosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlussiosApp.swift; sourceTree = "<group>"; };
+		2CF60CA82B3E9E6900C713C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2CF60CB02B3E9EB600C713C6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		2CF60CB22B3E9EB600C713C6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		2CF60CE42B3E9F3C00C713C6 /* PlussiosWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PlussiosWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF60CE82B3E9F3C00C713C6 /* PlussiosWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlussiosWidgetBundle.swift; sourceTree = "<group>"; };
+		2CF60CEA2B3E9F3C00C713C6 /* PlussiosWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlussiosWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		2CF60CEC2B3E9F3C00C713C6 /* PlussiosWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlussiosWidget.swift; sourceTree = "<group>"; };
+		2CF60CEE2B3E9F3C00C713C6 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		2CF60CF02B3E9F3D00C713C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CF60CF22B3E9F3D00C713C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CF60CF92B3EB25600C713C6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,15 +110,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CF60CE12B3E9F3C00C713C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF60CE62B3E9F3C00C713C6 /* SwiftUI.framework in Frameworks */,
+				2CF60CE52B3E9F3C00C713C6 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		2CF60C6D2B3E9DB300C713C6 = {
 			isa = PBXGroup;
 			children = (
+				2CF60CF92B3EB25600C713C6 /* README.md */,
 				2CF60C782B3E9DB300C713C6 /* Plussios */,
 				2CF60C8B2B3E9DB500C713C6 /* PlussiosTests */,
 				2CF60C952B3E9DB500C713C6 /* PlussiosUITests */,
+				2CF60CE72B3E9F3C00C713C6 /* PlussiosWidget */,
+				2CF60CAF2B3E9EB600C713C6 /* Frameworks */,
 				2CF60C772B3E9DB300C713C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +141,7 @@
 				2CF60C762B3E9DB300C713C6 /* Plussios.app */,
 				2CF60C882B3E9DB500C713C6 /* PlussiosTests.xctest */,
 				2CF60C922B3E9DB500C713C6 /* PlussiosUITests.xctest */,
+				2CF60CE42B3E9F3C00C713C6 /* PlussiosWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,11 +149,11 @@
 		2CF60C782B3E9DB300C713C6 /* Plussios */ = {
 			isa = PBXGroup;
 			children = (
-				2CF60C792B3E9DB300C713C6 /* PlussiosApp.swift */,
-				2CF60C7B2B3E9DB300C713C6 /* ContentView.swift */,
-				2CF60C7D2B3E9DB300C713C6 /* Item.swift */,
+				2CF60CA52B3E9E1000C713C6 /* Original */,
 				2CF60C7F2B3E9DB500C713C6 /* Assets.xcassets */,
 				2CF60C812B3E9DB500C713C6 /* Preview Content */,
+				2CF60CA62B3E9E4100C713C6 /* PlussiosApp.swift */,
+				2CF60CA82B3E9E6900C713C6 /* ContentView.swift */,
 			);
 			path = Plussios;
 			sourceTree = "<group>";
@@ -130,6 +183,38 @@
 			path = PlussiosUITests;
 			sourceTree = "<group>";
 		};
+		2CF60CA52B3E9E1000C713C6 /* Original */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60C792B3E9DB300C713C6 /* PlussiosApp.swift.bak */,
+				2CF60C7B2B3E9DB300C713C6 /* ContentView.swift.bak */,
+				2CF60C7D2B3E9DB300C713C6 /* Item.swift.bak */,
+			);
+			path = Original;
+			sourceTree = "<group>";
+		};
+		2CF60CAF2B3E9EB600C713C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60CB02B3E9EB600C713C6 /* WidgetKit.framework */,
+				2CF60CB22B3E9EB600C713C6 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CF60CE72B3E9F3C00C713C6 /* PlussiosWidget */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60CE82B3E9F3C00C713C6 /* PlussiosWidgetBundle.swift */,
+				2CF60CEA2B3E9F3C00C713C6 /* PlussiosWidgetLiveActivity.swift */,
+				2CF60CEC2B3E9F3C00C713C6 /* PlussiosWidget.swift */,
+				2CF60CEE2B3E9F3C00C713C6 /* AppIntent.swift */,
+				2CF60CF02B3E9F3D00C713C6 /* Assets.xcassets */,
+				2CF60CF22B3E9F3D00C713C6 /* Info.plist */,
+			);
+			path = PlussiosWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,10 +225,12 @@
 				2CF60C722B3E9DB300C713C6 /* Sources */,
 				2CF60C732B3E9DB300C713C6 /* Frameworks */,
 				2CF60C742B3E9DB300C713C6 /* Resources */,
+				2CF60CC62B3E9EB800C713C6 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2CF60CF42B3E9F3D00C713C6 /* PBXTargetDependency */,
 			);
 			name = Plussios;
 			productName = Plussios;
@@ -186,6 +273,23 @@
 			productReference = 2CF60C922B3E9DB500C713C6 /* PlussiosUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		2CF60CE32B3E9F3C00C713C6 /* PlussiosWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF60CF62B3E9F3D00C713C6 /* Build configuration list for PBXNativeTarget "PlussiosWidgetExtension" */;
+			buildPhases = (
+				2CF60CE02B3E9F3C00C713C6 /* Sources */,
+				2CF60CE12B3E9F3C00C713C6 /* Frameworks */,
+				2CF60CE22B3E9F3C00C713C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlussiosWidgetExtension;
+			productName = PlussiosWidgetExtension;
+			productReference = 2CF60CE42B3E9F3C00C713C6 /* PlussiosWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,6 +302,7 @@
 				TargetAttributes = {
 					2CF60C752B3E9DB300C713C6 = {
 						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
 					};
 					2CF60C872B3E9DB500C713C6 = {
 						CreatedOnToolsVersion = 15.1;
@@ -206,6 +311,9 @@
 					2CF60C912B3E9DB500C713C6 = {
 						CreatedOnToolsVersion = 15.1;
 						TestTargetID = 2CF60C752B3E9DB300C713C6;
+					};
+					2CF60CE32B3E9F3C00C713C6 = {
+						CreatedOnToolsVersion = 15.1;
 					};
 				};
 			};
@@ -225,6 +333,7 @@
 				2CF60C752B3E9DB300C713C6 /* Plussios */,
 				2CF60C872B3E9DB500C713C6 /* PlussiosTests */,
 				2CF60C912B3E9DB500C713C6 /* PlussiosUITests */,
+				2CF60CE32B3E9F3C00C713C6 /* PlussiosWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -253,6 +362,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CF60CE22B3E9F3C00C713C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF60CF12B3E9F3D00C713C6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -260,9 +377,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CF60C7C2B3E9DB300C713C6 /* ContentView.swift in Sources */,
-				2CF60C7E2B3E9DB300C713C6 /* Item.swift in Sources */,
-				2CF60C7A2B3E9DB300C713C6 /* PlussiosApp.swift in Sources */,
+				2CF60CA92B3E9E6A00C713C6 /* ContentView.swift in Sources */,
+				2CF60CA72B3E9E4100C713C6 /* PlussiosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +399,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CF60CE02B3E9F3C00C713C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF60CEB2B3E9F3C00C713C6 /* PlussiosWidgetLiveActivity.swift in Sources */,
+				2CF60CEF2B3E9F3C00C713C6 /* AppIntent.swift in Sources */,
+				2CF60CE92B3E9F3C00C713C6 /* PlussiosWidgetBundle.swift in Sources */,
+				2CF60CED2B3E9F3C00C713C6 /* PlussiosWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -295,6 +422,11 @@
 			isa = PBXTargetDependency;
 			target = 2CF60C752B3E9DB300C713C6 /* Plussios */;
 			targetProxy = 2CF60C932B3E9DB500C713C6 /* PBXContainerItemProxy */;
+		};
+		2CF60CF42B3E9F3D00C713C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CF60CE32B3E9F3C00C713C6 /* PlussiosWidgetExtension */;
+			targetProxy = 2CF60CF32B3E9F3D00C713C6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -421,8 +553,10 @@
 		2CF60C9D2B3E9DB500C713C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Plussios/Preview Content\"";
@@ -434,6 +568,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -442,6 +577,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.plussios.Plussios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,8 +586,10 @@
 		2CF60C9E2B3E9DB500C713C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Plussios/Preview Content\"";
@@ -463,6 +601,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,7 +624,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5C9TGFA48W;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.plussios.PlussiosTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,7 +644,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5C9TGFA48W;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.plussios.PlussiosTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -524,6 +663,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5C9TGFA48W;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.plussios.PlussiosUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -542,6 +682,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5C9TGFA48W;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.plussios.PlussiosUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -549,6 +690,62 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Plussios;
+			};
+			name = Release;
+		};
+		2CF60CF72B3E9F3D00C713C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5C9TGFA48W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlussiosWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PlussiosWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plussios.Plussios.PlussiosWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2CF60CF82B3E9F3D00C713C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5C9TGFA48W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlussiosWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PlussiosWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plussios.Plussios.PlussiosWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -587,6 +784,15 @@
 			buildConfigurations = (
 				2CF60CA32B3E9DB500C713C6 /* Debug */,
 				2CF60CA42B3E9DB500C713C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CF60CF62B3E9F3D00C713C6 /* Build configuration list for PBXNativeTarget "PlussiosWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF60CF72B3E9F3D00C713C6 /* Debug */,
+				2CF60CF82B3E9F3D00C713C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

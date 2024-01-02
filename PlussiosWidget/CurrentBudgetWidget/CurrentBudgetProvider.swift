@@ -32,12 +32,26 @@ struct CurrentBudgetProvider: AppIntentTimelineProvider {
         self.plussiosClient = plussiosClient
     }
 
+    // A generic representation of the widget while loading
     func placeholder(in context: Context) -> CurrentBudgetEntry {
         CurrentBudgetEntry(date: Date(), configuration: CurrentBudgetWidgetIntent(), totals: .success([]))
     }
 
+    // A snapshot in widget gallery or while in transition
     func snapshot(for configuration: CurrentBudgetWidgetIntent, in context: Context) async -> CurrentBudgetEntry {
-        CurrentBudgetEntry(date: Date(), configuration: configuration, totals: .success([]))
+        if context.isPreview {
+            // Appearance in the Widget Gallery
+            CurrentBudgetEntry(
+                date: Date(),
+                configuration: configuration,
+                totals: .success(
+                    Array(sampleBudgetEntries.prefix(getMaxEntries(for: context.family)))
+                )
+            )
+        } else {
+            // Appearance in transition
+            CurrentBudgetEntry(date: Date(), configuration: configuration, totals: .success([]))
+        }
     }
 
     func timeline(for configuration: CurrentBudgetWidgetIntent, in context: Context) async -> Timeline<CurrentBudgetEntry> {
@@ -75,31 +89,56 @@ struct CurrentBudgetProvider: AppIntentTimelineProvider {
         for context: Context,
         configuration: CurrentBudgetWidgetIntent
     ) -> [BudgetTotals.Entry] {
-        let maxEntries: Int
-
-        switch context.family {
-        case .systemSmall:
-            maxEntries = 3
-        case .systemMedium:
-            maxEntries = 5
-        case .systemLarge:
-            maxEntries = 12
-        case .systemExtraLarge:
-            maxEntries = 12
-        case .accessoryCircular:
-            maxEntries = 3
-        case .accessoryRectangular:
-            maxEntries = 3
-        case .accessoryInline:
-            maxEntries = 1
-        @unknown default:
-            maxEntries = 3
-        }
+        let maxEntries = getMaxEntries(for: context.family)
 
         let page = max(1, configuration.page)
 
         return Array(entries.suffix(from: maxEntries * (page - 1)).prefix(maxEntries))
     }
+
+    private func getMaxEntries(for family: WidgetFamily) -> Int {
+        switch family {
+        case .systemSmall:
+            return 3
+        case .systemMedium:
+            return 5
+        case .systemLarge:
+            return 12
+        case .systemExtraLarge:
+            return 12
+        case .accessoryCircular:
+            return 3
+        case .accessoryRectangular:
+            return 3
+        case .accessoryInline:
+            return 1
+        @unknown default:
+            return 3
+        }
+    }
+
+    private let sampleBudgetEntries: [BudgetTotals.Entry] = [
+        BudgetTotals.Entry(category: .named("Groceries"), balanceString: "$3,120.45"),
+        BudgetTotals.Entry(category: .named("Utilities"), balanceString: "$1,250.30"),
+        BudgetTotals.Entry(category: .named("Rent"), balanceString: "$2,800.00"),
+        BudgetTotals.Entry(category: .named("Transportation"), balanceString: "$900.75"),
+        BudgetTotals.Entry(category: .named("Dining Out"), balanceString: "$560.50"),
+        BudgetTotals.Entry(category: .named("Entertainment"), balanceString: "$725.60"),
+        BudgetTotals.Entry(category: .named("Healthcare"), balanceString: "$1,180.20"),
+        BudgetTotals.Entry(category: .named("Clothing"), balanceString: "$400.00"),
+        BudgetTotals.Entry(category: .named("Education"), balanceString: "$2,100.00"),
+        BudgetTotals.Entry(category: .named("Savings"), balanceString: "$5,000.00"),
+        BudgetTotals.Entry(category: .named("Travel"), balanceString: "$3,300.00"),
+        BudgetTotals.Entry(category: .named("Gifts"), balanceString: "$650.00"),
+        BudgetTotals.Entry(category: .named("Fitness"), balanceString: "$320.00"),
+        BudgetTotals.Entry(category: .named("Insurance"), balanceString: "$1,500.00"),
+        BudgetTotals.Entry(category: .named("Electronics"), balanceString: "$850.00"),
+        BudgetTotals.Entry(category: .named("Personal Care"), balanceString: "$230.00"),
+        BudgetTotals.Entry(category: .named("Pet Care"), balanceString: "$280.00"),
+        BudgetTotals.Entry(category: .named("Home Maintenance"), balanceString: "$1,125.00"),
+        BudgetTotals.Entry(category: .named("Subscriptions"), balanceString: "$120.00"),
+        BudgetTotals.Entry(category: .named("Miscellaneous"), balanceString: "$500.00")
+    ]
 }
 
 // For iOS 16
@@ -117,5 +156,11 @@ extension CurrentBudgetProvider: TimelineProvider {
             let timeline = await timeline(for: CurrentBudgetWidgetIntent(), in: context)
             completion(timeline)
         }
+    }
+}
+
+private extension CategoryInfo {
+    static func named(_ name: String) -> CategoryInfo {
+        CategoryInfo(id: name, name: name)
     }
 }

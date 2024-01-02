@@ -33,4 +33,8 @@ public final class PlussiosGSheetClient: PlussiosClientProtocol {
 
         return BudgetTotals(date: Date(), entries: entries)
     }
+
+    public func loadCurrentExpenses(sheetId: GSheetId, period: ExpensesPeriod) async throws -> ExpensesTotals {
+        throw GeneralError.notImplemented
+    }
 }

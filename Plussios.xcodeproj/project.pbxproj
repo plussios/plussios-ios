@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C8A608E2B44144400E6343C /* ExpensesPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A608D2B44144400E6343C /* ExpensesPeriod.swift */; };
+		2C8A60902B44147100E6343C /* ExpensesTotals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A608F2B44147100E6343C /* ExpensesTotals.swift */; };
+		2C8A60942B44155900E6343C /* GeneralError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A60932B44155900E6343C /* GeneralError.swift */; };
+		2C8A60952B44181200E6343C /* CurrentExpensesEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A608C2B44139600E6343C /* CurrentExpensesEntry.swift */; };
+		2C8A60962B44181200E6343C /* CurrentExpensesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A60892B44139600E6343C /* CurrentExpensesProvider.swift */; };
+		2C8A60972B44181200E6343C /* CurrentExpensesWidgetIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A608B2B44139600E6343C /* CurrentExpensesWidgetIntent.swift */; };
+		2C8A60982B44181200E6343C /* CurrentExpensesWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A608A2B44139600E6343C /* CurrentExpensesWidget.swift */; };
 		2CB26F6D2B3EF5FA0097B786 /* PlussiosCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF60D2F2B3EE3AD00C713C6 /* PlussiosCore.framework */; };
 		2CB26F6E2B3EF5FA0097B786 /* PlussiosCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF60D2F2B3EE3AD00C713C6 /* PlussiosCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2CB26F7C2B3EFE0F0097B786 /* DesignSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CB26F7B2B3EFE0F0097B786 /* DesignSystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -169,6 +176,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C8A60892B44139600E6343C /* CurrentExpensesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentExpensesProvider.swift; sourceTree = "<group>"; };
+		2C8A608A2B44139600E6343C /* CurrentExpensesWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentExpensesWidget.swift; sourceTree = "<group>"; };
+		2C8A608B2B44139600E6343C /* CurrentExpensesWidgetIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentExpensesWidgetIntent.swift; sourceTree = "<group>"; };
+		2C8A608C2B44139600E6343C /* CurrentExpensesEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentExpensesEntry.swift; sourceTree = "<group>"; };
+		2C8A608D2B44144400E6343C /* ExpensesPeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesPeriod.swift; sourceTree = "<group>"; };
+		2C8A608F2B44147100E6343C /* ExpensesTotals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesTotals.swift; sourceTree = "<group>"; };
+		2C8A60932B44155900E6343C /* GeneralError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralError.swift; sourceTree = "<group>"; };
 		2CB26F722B3EF73C0097B786 /* Plussios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Plussios.entitlements; sourceTree = "<group>"; };
 		2CB26F732B3EF7680097B786 /* PlussiosWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PlussiosWidgetExtension.entitlements; sourceTree = "<group>"; };
 		2CB26F792B3EFE0F0097B786 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -291,6 +305,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C8A60882B44138A00E6343C /* CurrentExpensesWidget */ = {
+			isa = PBXGroup;
+			children = (
+				2C8A608A2B44139600E6343C /* CurrentExpensesWidget.swift */,
+				2C8A608B2B44139600E6343C /* CurrentExpensesWidgetIntent.swift */,
+				2C8A60892B44139600E6343C /* CurrentExpensesProvider.swift */,
+				2C8A608C2B44139600E6343C /* CurrentExpensesEntry.swift */,
+			);
+			path = CurrentExpensesWidget;
+			sourceTree = "<group>";
+		};
 		2CB26F7A2B3EFE0F0097B786 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
@@ -392,6 +417,7 @@
 		2CF60CE72B3E9F3C00C713C6 /* PlussiosWidget */ = {
 			isa = PBXGroup;
 			children = (
+				2C8A60882B44138A00E6343C /* CurrentExpensesWidget */,
 				2CF60D4D2B3EE57400C713C6 /* CurrentBudgetWidget */,
 				2CF60CE82B3E9F3C00C713C6 /* PlussiosWidgetBundle.swift */,
 				2CF60CEA2B3E9F3C00C713C6 /* PlussiosWidgetLiveActivity.swift */,
@@ -418,6 +444,7 @@
 			children = (
 				2CF60D002B3EC1FD00C713C6 /* CategoryInfo.swift */,
 				2CF60D022B3EC26800C713C6 /* MoneyAmount.swift */,
+				2C8A60932B44155900E6343C /* GeneralError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -447,6 +474,8 @@
 			isa = PBXGroup;
 			children = (
 				2CF60D092B3EC4AC00C713C6 /* BudgetTotals.swift */,
+				2C8A608D2B44144400E6343C /* ExpensesPeriod.swift */,
+				2C8A608F2B44147100E6343C /* ExpensesTotals.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -882,11 +911,15 @@
 			files = (
 				2CF60D532B3EE60200C713C6 /* CurrentBudgetProvider.swift in Sources */,
 				2CF60CEB2B3E9F3C00C713C6 /* PlussiosWidgetLiveActivity.swift in Sources */,
+				2C8A60982B44181200E6343C /* CurrentExpensesWidget.swift in Sources */,
 				2CF60D542B3EE60800C713C6 /* CurrentBudgetWidgetIntent.swift in Sources */,
 				2CF60D572B3EE62500C713C6 /* CurrentBudgetEntry.swift in Sources */,
+				2C8A60972B44181200E6343C /* CurrentExpensesWidgetIntent.swift in Sources */,
 				2CF60D672B3EEEBF00C713C6 /* Assembly.swift in Sources */,
 				2CF60D552B3EE60800C713C6 /* CurrentBudgetWidget.swift in Sources */,
 				2CF60CEF2B3E9F3C00C713C6 /* AppIntent.swift in Sources */,
+				2C8A60962B44181200E6343C /* CurrentExpensesProvider.swift in Sources */,
+				2C8A60952B44181200E6343C /* CurrentExpensesEntry.swift in Sources */,
 				2CF60CE92B3E9F3C00C713C6 /* PlussiosWidgetBundle.swift in Sources */,
 				2CF60CED2B3E9F3C00C713C6 /* PlussiosWidget.swift in Sources */,
 			);
@@ -901,6 +934,7 @@
 				2CF60D5E2B3EE81100C713C6 /* CurrentBudgetEntriesMapper.swift in Sources */,
 				2CB26F8F2B3F657A0097B786 /* PlussiosApiClient.swift in Sources */,
 				2CF60D582B3EE81100C713C6 /* MoneyAmount.swift in Sources */,
+				2C8A60942B44155900E6343C /* GeneralError.swift in Sources */,
 				2CF60D5C2B3EE81100C713C6 /* BudgetTotals.swift in Sources */,
 				2CF60D632B3EE81100C713C6 /* CategoryInfo.swift in Sources */,
 				2CF60D5F2B3EE81100C713C6 /* CategoryInfoMapper.swift in Sources */,
@@ -908,6 +942,8 @@
 				2CF60D332B3EE3AD00C713C6 /* PlussiosCore.docc in Sources */,
 				2CF60D622B3EE81100C713C6 /* MapperError.swift in Sources */,
 				2CF60D5A2B3EE81100C713C6 /* SecureUserSettings.swift in Sources */,
+				2C8A608E2B44144400E6343C /* ExpensesPeriod.swift in Sources */,
+				2C8A60902B44147100E6343C /* ExpensesTotals.swift in Sources */,
 				2CF60D642B3EE81100C713C6 /* SecureUserSettingsStorage.swift in Sources */,
 				2CF60D652B3EE81100C713C6 /* GSheetsClient.swift in Sources */,
 				2CF60D5B2B3EE81100C713C6 /* SheetFullRange.swift in Sources */,

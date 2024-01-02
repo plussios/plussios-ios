@@ -9,5 +9,6 @@ import Foundation
 
 public protocol PlussiosClientProtocol {
     func loadCurrentBudget(sheetId: GSheetId) async throws -> BudgetTotals
+    func loadCurrentExpenses(sheetId: GSheetId, period: ExpensesPeriod) async throws -> ExpensesTotals
 }
 

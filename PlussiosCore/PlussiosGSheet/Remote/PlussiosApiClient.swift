@@ -16,6 +16,11 @@ struct CurrentBudgetResponse: Decodable {
     let rows: [BudgetTotals.Entry]
 }
 
+struct CurrentExpensesResponse: Decodable {
+    let period: ExpensesPeriod
+    let rows: [ExpensesTotals.Entry]
+}
+
 public final class PlussiosApiClient: PlussiosClientProtocol {
     private enum Constants {
         static let host = "https://api.plussios.com"
@@ -51,6 +56,35 @@ public final class PlussiosApiClient: PlussiosClientProtocol {
         )
 
         return budgetTotals
+    }
+
+    public func loadCurrentExpenses(sheetId: GSheetId, period: ExpensesPeriod) async throws -> ExpensesTotals {
+        // Make an HTTP request to https://api.plussios.com/expenses/current with sheetId and period as a query parameter
+        guard let endpoint = URL(string: "\(Constants.host)/expenses/current?spreadsheetId=\(sheetId.sheetId)&period=\(period.rawValue)") else {
+            throw PlussiosApiClientError.invalidEndpoint
+        }
+
+        let sessionConfiguration = URLSessionConfiguration.default
+        let session = URLSession(configuration: sessionConfiguration, delegate: sessionDelegate, delegateQueue: .main)
+
+        // Create a URLSessionDataTask with our URL
+        let (data, response) = try await session.data(from: endpoint)
+
+        // Check if the status code is 200 (OK)
+        guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+            throw PlussiosApiClientError.statusCodeNotOK
+        }
+
+        // Try to decode the data into a `ExpensesTotals` object
+        let parsedResponse = try JSONDecoder().decode(CurrentExpensesResponse.self, from: data)
+
+        let expensesTotals = ExpensesTotals(
+            date: Date(),
+            period: parsedResponse.period,
+            entries: parsedResponse.rows
+        )
+
+        return expensesTotals
     }
 }
 

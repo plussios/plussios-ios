@@ -13,6 +13,7 @@ struct PlussiosWidgetBundle: WidgetBundle {
     var body: some Widget {
 //        PlussiosWidget()
         CurrentBudgetWidget()
+        CurrentExpensesWidget()
         PlussiosWidgetLiveActivity()
     }
 }

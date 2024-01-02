@@ -13,6 +13,7 @@ struct SettingsView: View {
     @State private var googleSheetURL = ""
     @State private var isSavingSheetURL = false
     @State private var isSettingsLoaded = false
+    @State private var errorMessage = ""
 
     var body: some View {
         VStack {
@@ -27,6 +28,11 @@ struct SettingsView: View {
             }
             .disabled(isSavingSheetURL)
             .padding()
+            if !errorMessage.isEmpty {
+                Text(errorMessage)
+                    .foregroundStyle(.red)
+                    .padding()
+            }
             Button("Test") {
                 loadBudget()
             }
@@ -41,7 +47,13 @@ struct SettingsView: View {
     private func saveURL(_ url: String) {
         isSavingSheetURL = true
         Task {
-            try await viewModel.set(googleSheetsURL: url)
+            do {
+                try await viewModel.set(googleSheetsURL: url)
+            } catch {
+                await MainActor.run {
+                    errorMessage = error.localizedDescription
+                }
+            }
 
             await MainActor.run {
                 isSavingSheetURL = false

@@ -11,7 +11,7 @@ import SwiftUI
 @main
 struct PlussiosWidgetBundle: WidgetBundle {
     var body: some Widget {
-        PlussiosWidget()
+//        PlussiosWidget()
         CurrentBudgetWidget()
         PlussiosWidgetLiveActivity()
     }

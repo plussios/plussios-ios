@@ -55,7 +55,7 @@ struct CurrentBudgetProvider: AppIntentTimelineProvider {
             entry = CurrentBudgetEntry(
                 date: nextUpdateDate,
                 configuration: configuration,
-                totals: .success(prepare(entries: totals.entries, for: context))
+                totals: .success(prepare(entries: totals.entries, for: context, configuration: configuration))
             )
         } catch {
             let nextUpdateDate = Calendar.current.date(byAdding: .minute, value: 15, to: Date())!
@@ -70,7 +70,11 @@ struct CurrentBudgetProvider: AppIntentTimelineProvider {
         return Timeline(entries: entries, policy: .atEnd)
     }
 
-    private func prepare(entries: [BudgetTotals.Entry], for context: Context) -> [BudgetTotals.Entry] {
+    private func prepare(
+        entries: [BudgetTotals.Entry],
+        for context: Context,
+        configuration: CurrentBudgetWidgetIntent
+    ) -> [BudgetTotals.Entry] {
         let maxEntries: Int
 
         switch context.family {
@@ -92,7 +96,9 @@ struct CurrentBudgetProvider: AppIntentTimelineProvider {
             maxEntries = 3
         }
 
-        return Array(entries.prefix(maxEntries))
+        let page = max(1, configuration.page)
+
+        return Array(entries.suffix(from: maxEntries * (page - 1)).prefix(maxEntries))
     }
 }
 

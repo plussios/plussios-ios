@@ -69,6 +69,7 @@
 		2CF60D652B3EE81100C713C6 /* GSheetsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60CFB2B3EBD6D00C713C6 /* GSheetsClient.swift */; };
 		2CF60D672B3EEEBF00C713C6 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D662B3EEEBF00C713C6 /* Assembly.swift */; };
 		2CF60D6A2B3EEF9700C713C6 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D692B3EEF9700C713C6 /* Secrets.swift */; };
+		0B971180EDF54001AF7A833B /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 02B637443D5146D1A273626E /* Sentry */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -250,6 +251,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B971180EDF54001AF7A833B /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +261,7 @@
 			files = (
 				2CF60D442B3EE3AE00C713C6 /* PlussiosCore.framework in Frameworks */,
 				2CB26F7F2B3EFE0F0097B786 /* DesignSystem.framework in Frameworks */,
+				0B971180EDF54001AF7A833B /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +269,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B971180EDF54001AF7A833B /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +277,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B971180EDF54001AF7A833B /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +289,7 @@
 				2CB26F842B3EFE1E0097B786 /* DesignSystem.framework in Frameworks */,
 				2CF60CE52B3E9F3C00C713C6 /* WidgetKit.framework in Frameworks */,
 				2CB26F6D2B3EF5FA0097B786 /* PlussiosCore.framework in Frameworks */,
+				0B971180EDF54001AF7A833B /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +297,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B971180EDF54001AF7A833B /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CF60D392B3EE3AE00C713C6 /* PlussiosCore.framework in Frameworks */,
+				0B971180EDF54001AF7A833B /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +651,7 @@
 				2CF60C742B3E9DB300C713C6 /* Resources */,
 				2CF60CC62B3E9EB800C713C6 /* Embed Foundation Extensions */,
 				2CF60D492B3EE3AE00C713C6 /* Embed Frameworks */,
+				B7838887CECA4613BA992E34 /* Upload Debug Symbols to Sentry */,
 			);
 			buildRules = (
 			);
@@ -655,6 +664,9 @@
 			productName = Plussios;
 			productReference = 2CF60C762B3E9DB300C713C6 /* Plussios.app */;
 			productType = "com.apple.product-type.application";
+			packageProductDependencies = (
+				02B637443D5146D1A273626E /* Sentry */,
+			);
 		};
 		2CF60C872B3E9DB500C713C6 /* PlussiosTests */ = {
 			isa = PBXNativeTarget;
@@ -807,6 +819,9 @@
 				2CF60D2E2B3EE3AD00C713C6 /* PlussiosCore */,
 				2CF60D372B3EE3AD00C713C6 /* PlussiosCoreTests */,
 				2CB26F782B3EFE0F0097B786 /* DesignSystem */,
+			);
+			packageReferences = (
+				AFC35CBC900744CB972C51B0 /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
 			);
 		};
 /* End PBXProject section */
@@ -1234,6 +1249,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 			};
 			name = Debug;
 		};
@@ -1268,6 +1284,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 			};
 			name = Release;
 		};
@@ -1591,6 +1608,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B7838887CECA4613BA992E34 /* Upload Debug Symbols to Sentry */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Upload Debug Symbols to Sentry";
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+			);
+			outputPaths = (
+			);
+			shellPath = /bin/sh;
+			shellScript = "# This script is responsable to upload debug symbols and source context for Sentry.\nif which sentry-cli >/dev/null; then\nexport SENTRY_ORG=plussios\nexport SENTRY_PROJECT=plussios-ios\nERROR=$(sentry-cli debug-files upload --include-sources \"$DWARF_DSYM_FOLDER_PATH\" 2>&1 >/dev/null)\nif [ ! $? -eq 0 ]; then\necho \"warning: sentry-cli - $ERROR\"\nfi\nelse\necho \"warning: sentry-cli not installed, download from https://github.com/getsentry/sentry-cli/releases\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AFC35CBC900744CB972C51B0 /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getsentry/sentry-cocoa/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02B637443D5146D1A273626E /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFC35CBC900744CB972C51B0 /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = Sentry;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2CF60C6E2B3E9DB300C713C6 /* Project object */;
 }

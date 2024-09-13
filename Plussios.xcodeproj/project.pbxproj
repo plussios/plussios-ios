@@ -264,9 +264,6 @@
 		2CB26F8E2B3F657A0097B786 /* PlussiosApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlussiosApiClient.swift; sourceTree = "<group>"; };
 		2CB26F902B3F6B680097B786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CF60C762B3E9DB300C713C6 /* Plussios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plussios.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CF60C792B3E9DB300C713C6 /* PlussiosApp.swift.bak */ = {isa = PBXFileReference; lastKnownFileType = text; path = PlussiosApp.swift.bak; sourceTree = "<group>"; };
-		2CF60C7B2B3E9DB300C713C6 /* ContentView.swift.bak */ = {isa = PBXFileReference; lastKnownFileType = text; path = ContentView.swift.bak; sourceTree = "<group>"; };
-		2CF60C7D2B3E9DB300C713C6 /* Item.swift.bak */ = {isa = PBXFileReference; lastKnownFileType = text; path = Item.swift.bak; sourceTree = "<group>"; };
 		2CF60C7F2B3E9DB500C713C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CF60C822B3E9DB500C713C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2CF60C882B3E9DB500C713C6 /* PlussiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlussiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -503,6 +500,45 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		2C803EF72C9412D000B6893F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60C782B3E9DB300C713C6 /* Plussios */,
+				2CF60C8B2B3E9DB500C713C6 /* PlussiosTests */,
+				2CF60C952B3E9DB500C713C6 /* PlussiosUITests */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2C803EF82C9412DF00B6893F /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				2CB26F732B3EF7680097B786 /* PlussiosWidgetExtension.entitlements */,
+				2CF60CE72B3E9F3C00C713C6 /* PlussiosWidget */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		2C803EF92C9412F700B6893F /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60D302B3EE3AD00C713C6 /* PlussiosCore */,
+				2CF60D3E2B3EE3AE00C713C6 /* PlussiosCoreTests */,
+				2CB26F7A2B3EFE0F0097B786 /* DesignSystem */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		2C803EFA2C94130C00B6893F /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				2C4428662C84781E00FDF104 /* Plussios Watch Watch App */,
+				2C4428772C84781E00FDF104 /* Plussios Watch Watch AppTests */,
+				2C4428812C84781E00FDF104 /* Plussios Watch Watch AppUITests */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
 		2C8A60882B44138A00E6343C /* CurrentExpensesWidget */ = {
 			isa = PBXGroup;
 			children = (
@@ -527,18 +563,11 @@
 		2CF60C6D2B3E9DB300C713C6 = {
 			isa = PBXGroup;
 			children = (
-				2CB26F732B3EF7680097B786 /* PlussiosWidgetExtension.entitlements */,
 				2CF60CF92B3EB25600C713C6 /* README.md */,
-				2CF60C782B3E9DB300C713C6 /* Plussios */,
-				2CF60C8B2B3E9DB500C713C6 /* PlussiosTests */,
-				2CF60C952B3E9DB500C713C6 /* PlussiosUITests */,
-				2CF60CE72B3E9F3C00C713C6 /* PlussiosWidget */,
-				2CF60D302B3EE3AD00C713C6 /* PlussiosCore */,
-				2CF60D3E2B3EE3AE00C713C6 /* PlussiosCoreTests */,
-				2CB26F7A2B3EFE0F0097B786 /* DesignSystem */,
-				2C4428662C84781E00FDF104 /* Plussios Watch Watch App */,
-				2C4428772C84781E00FDF104 /* Plussios Watch Watch AppTests */,
-				2C4428812C84781E00FDF104 /* Plussios Watch Watch AppUITests */,
+				2C803EF72C9412D000B6893F /* App */,
+				2C803EF82C9412DF00B6893F /* Widget */,
+				2C803EF92C9412F700B6893F /* Libs */,
+				2C803EFA2C94130C00B6893F /* Watch */,
 				2CF60CAF2B3E9EB600C713C6 /* Frameworks */,
 				2CF60C772B3E9DB300C713C6 /* Products */,
 			);
@@ -566,7 +595,6 @@
 			children = (
 				2CB26F722B3EF73C0097B786 /* Plussios.entitlements */,
 				2CF60D1C2B3EC96300C713C6 /* App */,
-				2CF60CA52B3E9E1000C713C6 /* Original */,
 				2CF60C7F2B3E9DB500C713C6 /* Assets.xcassets */,
 				2CF60C812B3E9DB500C713C6 /* Preview Content */,
 				2CB26F902B3F6B680097B786 /* Info.plist */,
@@ -597,16 +625,6 @@
 				2CF60C982B3E9DB500C713C6 /* PlussiosUITestsLaunchTests.swift */,
 			);
 			path = PlussiosUITests;
-			sourceTree = "<group>";
-		};
-		2CF60CA52B3E9E1000C713C6 /* Original */ = {
-			isa = PBXGroup;
-			children = (
-				2CF60C792B3E9DB300C713C6 /* PlussiosApp.swift.bak */,
-				2CF60C7B2B3E9DB300C713C6 /* ContentView.swift.bak */,
-				2CF60C7D2B3E9DB300C713C6 /* Item.swift.bak */,
-			);
-			path = Original;
 			sourceTree = "<group>";
 		};
 		2CF60CAF2B3E9EB600C713C6 /* Frameworks */ = {
@@ -1391,7 +1409,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Plussios Watch Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Watch/Plussios Watch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 5C9TGFA48W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1421,7 +1439,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Plussios Watch Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Watch/Plussios Watch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 5C9TGFA48W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1715,15 +1733,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Plussios/Plussios.entitlements;
+				CODE_SIGN_ENTITLEMENTS = App/Plussios/Plussios.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_ASSET_PATHS = "\"Plussios/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"App/Plussios/Preview Content\"";
 				DEVELOPMENT_TEAM = 5C9TGFA48W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Plussios/Info.plist;
+				INFOPLIST_FILE = App/Plussios/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1751,15 +1769,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Plussios/Plussios.entitlements;
+				CODE_SIGN_ENTITLEMENTS = App/Plussios/Plussios.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_ASSET_PATHS = "\"Plussios/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"App/Plussios/Preview Content\"";
 				DEVELOPMENT_TEAM = 5C9TGFA48W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Plussios/Info.plist;
+				INFOPLIST_FILE = App/Plussios/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1862,12 +1880,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = PlussiosWidgetExtension.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Widget/PlussiosWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5C9TGFA48W;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PlussiosWidget/Info.plist;
+				INFOPLIST_FILE = Widget/PlussiosWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PlussiosWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -1891,12 +1909,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = PlussiosWidgetExtension.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Widget/PlussiosWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5C9TGFA48W;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PlussiosWidget/Info.plist;
+				INFOPLIST_FILE = Widget/PlussiosWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PlussiosWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;

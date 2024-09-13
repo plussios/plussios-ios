@@ -22,19 +22,22 @@ final class MainViewModel: ObservableObject {
 
     @Published var state: State = .loading
 
-    var googleSheetsId: GSheetId
-    private let plussiosClient: PlussiosClientProtocol
+    private let budgetRepository: BudgetRepositoryProtocol
+    private let expenseTotalsRepository: ExpenseTotalsRepositoryProtocol
 
-    init(googleSheetsId: GSheetId, plussiosClient: PlussiosClientProtocol) {
-        self.googleSheetsId = googleSheetsId
-        self.plussiosClient = plussiosClient
+    init(
+        budgetRepository: BudgetRepositoryProtocol,
+        expenseTotalsRepository: ExpenseTotalsRepositoryProtocol
+    ) {
+        self.budgetRepository = budgetRepository
+        self.expenseTotalsRepository = expenseTotalsRepository
     }
 
     func loadData() {
         Task {
             do {
-                let budget = try await plussiosClient.loadCurrentBudget(sheetId: googleSheetsId)
-                let totals = try await plussiosClient.loadCurrentExpenses(sheetId: googleSheetsId, period: .day)
+                let budget = try await budgetRepository.loadCurrentBudget()
+                let totals = try await expenseTotalsRepository.loadCurrentExpenses(period: .day)
                 state = .data(MainViewData(budget: budget, totals: totals))
             } catch {
                 state = .error(error)

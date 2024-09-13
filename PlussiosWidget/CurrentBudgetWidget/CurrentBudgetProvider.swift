@@ -24,12 +24,10 @@ enum CurrentBudgetProviderError: Error {
 }
 
 struct CurrentBudgetProvider: AppIntentTimelineProvider {
-    private let settingsStorage: SecureUserSettingsStorageProtocol
-    private let plussiosClient: PlussiosClientProtocol
+    private let budgetRepository: BudgetRepositoryProtocol
 
-    init(settingsStorage: SecureUserSettingsStorageProtocol, plussiosClient: PlussiosClientProtocol) {
-        self.settingsStorage = settingsStorage
-        self.plussiosClient = plussiosClient
+    init(budgetRepository: BudgetRepositoryProtocol) {
+        self.budgetRepository = budgetRepository
     }
 
     // A generic representation of the widget while loading
@@ -59,12 +57,7 @@ struct CurrentBudgetProvider: AppIntentTimelineProvider {
 
         let entry: CurrentBudgetEntry
         do {
-            let userSettings = try await settingsStorage.load()
-            guard let sheetId = userSettings?.sheetId else {
-                throw CurrentBudgetProviderError.missingSheetId
-            }
-
-            let totals = try await plussiosClient.loadCurrentBudget(sheetId: sheetId)
+            let totals = try await budgetRepository.loadCurrentBudget()
             let nextUpdateDate = Calendar.current.date(byAdding: .minute, value: 15, to: totals.date)!
             entry = CurrentBudgetEntry(
                 date: nextUpdateDate,

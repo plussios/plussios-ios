@@ -24,12 +24,10 @@ enum CurrentExpensesProviderError: Error {
 }
 
 struct CurrentExpensesProvider: AppIntentTimelineProvider {
-    private let settingsStorage: SecureUserSettingsStorageProtocol
-    private let plussiosClient: PlussiosClientProtocol
+    private let expenseTotalsRepository: ExpenseTotalsRepositoryProtocol
 
-    init(settingsStorage: SecureUserSettingsStorageProtocol, plussiosClient: PlussiosClientProtocol) {
-        self.settingsStorage = settingsStorage
-        self.plussiosClient = plussiosClient
+    init(expenseTotalsRepository: ExpenseTotalsRepositoryProtocol) {
+        self.expenseTotalsRepository = expenseTotalsRepository
     }
 
     // A generic representation of the widget while loading
@@ -64,12 +62,7 @@ struct CurrentExpensesProvider: AppIntentTimelineProvider {
         let period = configuration.period.expensesPeriod
         let entry: CurrentExpensesEntry
         do {
-            let userSettings = try await settingsStorage.load()
-            guard let sheetId = userSettings?.sheetId else {
-                throw CurrentExpensesProviderError.missingSheetId
-            }
-
-            let totals = try await plussiosClient.loadCurrentExpenses(sheetId: sheetId, period: period)
+            let totals = try await expenseTotalsRepository.loadCurrentExpenses(period: period)
             let nextUpdateDate = Calendar.current.date(byAdding: .minute, value: 15, to: totals.date)!
             entry = CurrentExpensesEntry(
                 date: nextUpdateDate,

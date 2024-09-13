@@ -66,14 +66,12 @@ struct CurrentBudgetTotalsEntryCompactView: View {
 
 struct CurrentBudgetWidget: Widget {
     let kind: String = "CurrentBudgetWidget"
-    private let settingsStorage: SecureUserSettingsStorageProtocol
-    private let plussiosClient: PlussiosClientProtocol
+    private let budgetRepository: BudgetRepositoryProtocol
 
     init() {
         let assembly = Assembly.shared
 
-        settingsStorage = assembly.userSettingsStorage
-        plussiosClient = assembly.plussiosClient
+        budgetRepository = assembly.budgetRepository
     }
 
     var body: some WidgetConfiguration {
@@ -82,8 +80,7 @@ struct CurrentBudgetWidget: Widget {
                 kind: kind,
                 intent: CurrentBudgetWidgetIntent.self,
                 provider: CurrentBudgetProvider(
-                    settingsStorage: settingsStorage,
-                    plussiosClient: plussiosClient
+                    budgetRepository: budgetRepository
                 )
             ) { entry in
                 CurrentBudgetWidgetEntryView(entry: entry)
@@ -94,8 +91,7 @@ struct CurrentBudgetWidget: Widget {
             return StaticConfiguration(
                 kind: kind,
                 provider: CurrentBudgetProvider(
-                    settingsStorage: settingsStorage,
-                    plussiosClient: plussiosClient
+                    budgetRepository: budgetRepository
                 )
             ) { entry in
                 CurrentBudgetWidgetEntryView(entry: entry)

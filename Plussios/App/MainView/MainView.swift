@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct MainView: View {
-    let viewModel: MainViewModel
+    @ObservedObject
+    var viewModel: MainViewModel
 
     var body: some View {
         switch viewModel.state {
         case .loading:
             ProgressView()
-                .onAppear {
-                    viewModel.loadData()
-                }
+//                .onAppear {
+//                    viewModel.loadData()
+//                }
         case .data(let data):
             Text("TODO")
         case .error(let error):

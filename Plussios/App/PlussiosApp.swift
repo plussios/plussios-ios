@@ -12,7 +12,7 @@ import PlussiosCore
 
 @main
 struct PlussiosApp: App {
-    @State private var appModel = PlussiosAppModel(
+    @StateObject private var appModel = PlussiosAppModel(
         settingsStorage: SecureUserSettingsStorageFactory.shared.make()
     )
 
@@ -36,19 +36,19 @@ struct PlussiosApp: App {
                     .onAppear {
                         appModel.load()
                     }
-            case .welcome:
+            case .welcome, .main:
                 SettingsView(
                     viewModel: SettingsViewModel(
                         settingsStorage: SecureUserSettingsStorageFactory.shared.make()
                     )
                 )
-            case .main(let sheetsId):
-                MainView(
-                    viewModel: MainViewModel(
-                        googleSheetsId: sheetsId,
-                        plussiosClient: PlussiosClientFactory.shared.makeClient()
-                    )
-                )
+//            case .main:
+//                MainView(
+//                    viewModel: MainViewModel(
+//                        budgetRepository: BudgetRepositoryFactory.shared.make(),
+//                        expenseTotalsRepository: ExpenseTotalsRepositoryFactory.shared.make()
+//                    )
+//                )
             case .error(let error):
                 Text(error?.localizedDescription ?? "Unknown error")
             }

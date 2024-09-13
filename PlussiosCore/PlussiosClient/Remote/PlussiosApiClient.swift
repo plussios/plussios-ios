@@ -10,6 +10,7 @@ import Foundation
 public enum PlussiosApiClientError: Error {
     case invalidEndpoint
     case statusCodeNotOK
+    case missingSheetId
 }
 
 struct CurrentBudgetResponse: Decodable {
@@ -21,14 +22,17 @@ struct CurrentExpensesResponse: Decodable {
     let rows: [ExpensesTotals.Entry]
 }
 
-public final class PlussiosApiClient: PlussiosClientProtocol {
+public final class PlussiosApiClient {
     private enum Constants {
         static let host = "https://api.plussios.com"
     }
 
     private let sessionDelegate = SessionDelegate()
+    private let userSettingsStorage: SecureUserSettingsStorageProtocol
 
-    public init() {}
+    public init(userSettingsStorage: SecureUserSettingsStorageProtocol) {
+        self.userSettingsStorage = userSettingsStorage
+    }
 
     public func loadCurrentBudget(sheetId: GSheetId) async throws -> BudgetTotals {
         // Make an HTTP request to https://api.plussios.com/budget/current with sheetId as a query parameter
@@ -85,6 +89,32 @@ public final class PlussiosApiClient: PlussiosClientProtocol {
         )
 
         return expensesTotals
+    }
+
+    private func getSheetId() async throws -> GSheetId {
+        guard let settings = try await userSettingsStorage.load(),
+              let sheetId = settings.sheetId
+        else {
+            throw PlussiosApiClientError.missingSheetId
+        }
+
+        return sheetId
+    }
+}
+
+extension PlussiosApiClient: ExpenseTotalsRepositoryProtocol {
+
+    public func loadCurrentExpenses(period: ExpensesPeriod) async throws -> ExpensesTotals {
+        let sheetId = try await getSheetId()
+        return try await loadCurrentExpenses(sheetId: sheetId, period: period)
+    }
+}
+
+extension PlussiosApiClient: BudgetRepositoryProtocol {
+
+    public func loadCurrentBudget() async throws -> BudgetTotals {
+        let sheetId = try await getSheetId()
+        return try await loadCurrentBudget(sheetId: sheetId)
     }
 }
 

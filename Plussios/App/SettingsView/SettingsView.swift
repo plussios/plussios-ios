@@ -72,7 +72,9 @@ struct SettingsView: View {
             }
             guard let sheetId else { return }
 
-            let client = PlussiosApiClient()
+            let client = PlussiosApiClient(
+                userSettingsStorage: SecureUserSettingsStorageFactory.shared.make()
+            )
 
             do {
                 let budget = try await client.loadCurrentBudget(sheetId: sheetId)

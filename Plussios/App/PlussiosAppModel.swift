@@ -12,7 +12,7 @@ final class PlussiosAppModel: ObservableObject {
     enum State {
         case loading
         case welcome
-        case main(GSheetId)
+        case main
         case error(Error?)
     }
 
@@ -29,13 +29,13 @@ final class PlussiosAppModel: ObservableObject {
             do {
                 let settings = try await settingsStorage.load()
                 let googleSheetsId = settings?.sheetId
-                if let googleSheetsId {
-                    state = .main(googleSheetsId)
-                } else {
-                    state = .welcome
+                await MainActor.run {
+                    state = googleSheetsId != nil ? .main : .welcome
                 }
             } catch {
-                state = .error(error)
+                await MainActor.run {
+                    state = .error(error)
+                }
             }
         }
     }

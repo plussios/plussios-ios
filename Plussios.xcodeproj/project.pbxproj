@@ -19,7 +19,6 @@
 		2C25157B2B4BA619000DFD2E /* PlussiosAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C25157A2B4BA619000DFD2E /* PlussiosAppModel.swift */; };
 		2C25157E2B4BA793000DFD2E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C25157D2B4BA793000DFD2E /* MainView.swift */; };
 		2C2515802B4BA920000DFD2E /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C25157F2B4BA920000DFD2E /* MainViewModel.swift */; };
-		2C2515822B4BAC48000DFD2E /* PlussiosClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2515812B4BAC48000DFD2E /* PlussiosClientFactory.swift */; };
 		2C4428682C84781E00FDF104 /* Plussios_WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4428672C84781E00FDF104 /* Plussios_WatchApp.swift */; };
 		2C44286A2C84781E00FDF104 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4428692C84781E00FDF104 /* ContentView.swift */; };
 		2C44286C2C84781E00FDF104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C44286B2C84781E00FDF104 /* Assets.xcassets */; };
@@ -28,6 +27,10 @@
 		2C4428832C84781E00FDF104 /* Plussios_Watch_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4428822C84781E00FDF104 /* Plussios_Watch_Watch_AppUITests.swift */; };
 		2C4428852C84781E00FDF104 /* Plussios_Watch_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4428842C84781E00FDF104 /* Plussios_Watch_Watch_AppUITestsLaunchTests.swift */; };
 		2C4428882C84781E00FDF104 /* Plussios Watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2C4428652C84781E00FDF104 /* Plussios Watch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2C803EEE2C94023900B6893F /* BudgetRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C803EED2C94022700B6893F /* BudgetRepositoryProtocol.swift */; };
+		2C803EF22C94030B00B6893F /* ExpenseTotalsRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C803EF12C94030200B6893F /* ExpenseTotalsRepositoryProtocol.swift */; };
+		2C803EF42C94050400B6893F /* ExpenseTotalsRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C803EF32C9404FC00B6893F /* ExpenseTotalsRepositoryFactory.swift */; };
+		2C803EF62C94059A00B6893F /* BudgetRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C803EF52C94059600B6893F /* BudgetRepositoryFactory.swift */; };
 		2C8A608E2B44144400E6343C /* ExpensesPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A608D2B44144400E6343C /* ExpensesPeriod.swift */; };
 		2C8A60902B44147100E6343C /* ExpensesTotals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A608F2B44147100E6343C /* ExpensesTotals.swift */; };
 		2C8A60942B44155900E6343C /* GeneralError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A60932B44155900E6343C /* GeneralError.swift */; };
@@ -44,7 +47,6 @@
 		2CB26F852B3EFE1E0097B786 /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB26F792B3EFE0F0097B786 /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2CB26F892B3EFE450097B786 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB26F882B3EFE450097B786 /* Colors.swift */; };
 		2CB26F8B2B3EFF8A0097B786 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB26F8A2B3EFF8A0097B786 /* Colors.xcassets */; };
-		2CB26F8D2B3F655F0097B786 /* PlussiosClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB26F8C2B3F655F0097B786 /* PlussiosClientProtocol.swift */; };
 		2CB26F8F2B3F657A0097B786 /* PlussiosApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB26F8E2B3F657A0097B786 /* PlussiosApiClient.swift */; };
 		2CF60C802B3E9DB500C713C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF60C7F2B3E9DB500C713C6 /* Assets.xcassets */; };
 		2CF60C832B3E9DB500C713C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF60C822B3E9DB500C713C6 /* Preview Assets.xcassets */; };
@@ -232,7 +234,6 @@
 		2C25157A2B4BA619000DFD2E /* PlussiosAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlussiosAppModel.swift; sourceTree = "<group>"; };
 		2C25157D2B4BA793000DFD2E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2C25157F2B4BA920000DFD2E /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		2C2515812B4BAC48000DFD2E /* PlussiosClientFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlussiosClientFactory.swift; sourceTree = "<group>"; };
 		2C4428652C84781E00FDF104 /* Plussios Watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Plussios Watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4428672C84781E00FDF104 /* Plussios_WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plussios_WatchApp.swift; sourceTree = "<group>"; };
 		2C4428692C84781E00FDF104 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -243,6 +244,10 @@
 		2C44287E2C84781E00FDF104 /* Plussios Watch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Plussios Watch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4428822C84781E00FDF104 /* Plussios_Watch_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plussios_Watch_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		2C4428842C84781E00FDF104 /* Plussios_Watch_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plussios_Watch_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2C803EED2C94022700B6893F /* BudgetRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetRepositoryProtocol.swift; sourceTree = "<group>"; };
+		2C803EF12C94030200B6893F /* ExpenseTotalsRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTotalsRepositoryProtocol.swift; sourceTree = "<group>"; };
+		2C803EF32C9404FC00B6893F /* ExpenseTotalsRepositoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTotalsRepositoryFactory.swift; sourceTree = "<group>"; };
+		2C803EF52C94059600B6893F /* BudgetRepositoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetRepositoryFactory.swift; sourceTree = "<group>"; };
 		2C8A60892B44139600E6343C /* CurrentExpensesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentExpensesProvider.swift; sourceTree = "<group>"; };
 		2C8A608A2B44139600E6343C /* CurrentExpensesWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentExpensesWidget.swift; sourceTree = "<group>"; };
 		2C8A608B2B44139600E6343C /* CurrentExpensesWidgetIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentExpensesWidgetIntent.swift; sourceTree = "<group>"; };
@@ -256,7 +261,6 @@
 		2CB26F7B2B3EFE0F0097B786 /* DesignSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignSystem.h; sourceTree = "<group>"; };
 		2CB26F882B3EFE450097B786 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		2CB26F8A2B3EFF8A0097B786 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		2CB26F8C2B3F655F0097B786 /* PlussiosClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlussiosClientProtocol.swift; sourceTree = "<group>"; };
 		2CB26F8E2B3F657A0097B786 /* PlussiosApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlussiosApiClient.swift; sourceTree = "<group>"; };
 		2CB26F902B3F6B680097B786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CF60C762B3E9DB300C713C6 /* Plussios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plussios.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -447,6 +451,58 @@
 			path = "Plussios Watch Watch AppUITests";
 			sourceTree = "<group>";
 		};
+		2C803EE92C93FE6B00B6893F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60D682B3EEF8100C713C6 /* Constants */,
+				2CF60D192B3EC91E00C713C6 /* Storage */,
+				2CF60CFF2B3EC1F100C713C6 /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2C803EEA2C93FEBF00B6893F /* Budget */ = {
+			isa = PBXGroup;
+			children = (
+				2C803EEC2C94021400B6893F /* Repository */,
+				2C803EEB2C93FEC600B6893F /* Models */,
+			);
+			path = Budget;
+			sourceTree = "<group>";
+		};
+		2C803EEB2C93FEC600B6893F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CF60D092B3EC4AC00C713C6 /* BudgetTotals.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C803EEC2C94021400B6893F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2C803EED2C94022700B6893F /* BudgetRepositoryProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		2C803EEF2C94028900B6893F /* ExpenseTotals */ = {
+			isa = PBXGroup;
+			children = (
+				2C803EF02C9402F700B6893F /* Repository */,
+				2CF60D082B3EC49C00C713C6 /* Models */,
+			);
+			path = ExpenseTotals;
+			sourceTree = "<group>";
+		};
+		2C803EF02C9402F700B6893F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2C803EF12C94030200B6893F /* ExpenseTotalsRepositoryProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		2C8A60882B44138A00E6343C /* CurrentExpensesWidget */ = {
 			isa = PBXGroup;
 			children = (
@@ -578,13 +634,13 @@
 			path = PlussiosWidget;
 			sourceTree = "<group>";
 		};
-		2CF60CFA2B3EBD5800C713C6 /* Networking */ = {
+		2CF60CFA2B3EBD5800C713C6 /* GSheet */ = {
 			isa = PBXGroup;
 			children = (
 				2CF60D202B3ECFF500C713C6 /* Models */,
 				2CF60CFB2B3EBD6D00C713C6 /* GSheetsClient.swift */,
 			);
-			path = Networking;
+			path = GSheet;
 			sourceTree = "<group>";
 		};
 		2CF60CFF2B3EC1F100C713C6 /* Models */ = {
@@ -597,14 +653,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		2CF60D042B3EC47A00C713C6 /* PlussiosGSheet */ = {
+		2CF60D042B3EC47A00C713C6 /* PlussiosClient */ = {
 			isa = PBXGroup;
 			children = (
 				2CF60D112B3EC7A600C713C6 /* Remote */,
-				2CF60D082B3EC49C00C713C6 /* Models */,
 				2CF60D052B3EC48500C713C6 /* Mappers */,
 			);
-			path = PlussiosGSheet;
+			path = PlussiosClient;
 			sourceTree = "<group>";
 		};
 		2CF60D052B3EC48500C713C6 /* Mappers */ = {
@@ -621,7 +676,6 @@
 		2CF60D082B3EC49C00C713C6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2CF60D092B3EC4AC00C713C6 /* BudgetTotals.swift */,
 				2C8A608D2B44144400E6343C /* ExpensesPeriod.swift */,
 				2C8A608F2B44147100E6343C /* ExpensesTotals.swift */,
 			);
@@ -633,7 +687,6 @@
 			children = (
 				2CF60CFD2B3EBDC600C713C6 /* PlussiosGSheetClient.swift */,
 				2CB26F8E2B3F657A0097B786 /* PlussiosApiClient.swift */,
-				2CB26F8C2B3F655F0097B786 /* PlussiosClientProtocol.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -696,9 +749,10 @@
 		2CF60D232B3ED31A00C713C6 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
+				2C803EF52C94059600B6893F /* BudgetRepositoryFactory.swift */,
+				2C803EF32C9404FC00B6893F /* ExpenseTotalsRepositoryFactory.swift */,
 				2CF60D242B3ED33700C713C6 /* GSheetsClientFactory.swift */,
 				2CF60D262B3ED3D900C713C6 /* SecureUserSettingsStorageFactory.swift */,
-				2C2515812B4BAC48000DFD2E /* PlussiosClientFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -706,12 +760,12 @@
 		2CF60D302B3EE3AD00C713C6 /* PlussiosCore */ = {
 			isa = PBXGroup;
 			children = (
-				2CF60D682B3EEF8100C713C6 /* Constants */,
-				2CF60D192B3EC91E00C713C6 /* Storage */,
+				2C803EEF2C94028900B6893F /* ExpenseTotals */,
+				2C803EEA2C93FEBF00B6893F /* Budget */,
+				2C803EE92C93FE6B00B6893F /* Common */,
 				2CF60D132B3EC7F500C713C6 /* UserSettings */,
-				2CF60D042B3EC47A00C713C6 /* PlussiosGSheet */,
-				2CF60CFF2B3EC1F100C713C6 /* Models */,
-				2CF60CFA2B3EBD5800C713C6 /* Networking */,
+				2CF60D042B3EC47A00C713C6 /* PlussiosClient */,
+				2CF60CFA2B3EBD5800C713C6 /* GSheet */,
 				2CF60D312B3EE3AD00C713C6 /* PlussiosCore.h */,
 				2CF60D322B3EE3AD00C713C6 /* PlussiosCore.docc */,
 			);
@@ -1179,12 +1233,13 @@
 			files = (
 				2CF60D252B3ED33700C713C6 /* GSheetsClientFactory.swift in Sources */,
 				2C25157E2B4BA793000DFD2E /* MainView.swift in Sources */,
-				2C2515822B4BAC48000DFD2E /* PlussiosClientFactory.swift in Sources */,
 				2CF60CA92B3E9E6A00C713C6 /* SettingsView.swift in Sources */,
 				2CF60D1F2B3ECBBE00C713C6 /* SettingsViewModel.swift in Sources */,
 				2CF60CA72B3E9E4100C713C6 /* PlussiosApp.swift in Sources */,
+				2C803EF62C94059A00B6893F /* BudgetRepositoryFactory.swift in Sources */,
 				2CF60D272B3ED3D900C713C6 /* SecureUserSettingsStorageFactory.swift in Sources */,
 				2C25157B2B4BA619000DFD2E /* PlussiosAppModel.swift in Sources */,
+				2C803EF42C94050400B6893F /* ExpenseTotalsRepositoryFactory.swift in Sources */,
 				2C2515802B4BA920000DFD2E /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1238,6 +1293,7 @@
 				2C8A60942B44155900E6343C /* GeneralError.swift in Sources */,
 				2CF60D5C2B3EE81100C713C6 /* BudgetTotals.swift in Sources */,
 				2CF60D632B3EE81100C713C6 /* CategoryInfo.swift in Sources */,
+				2C803EF22C94030B00B6893F /* ExpenseTotalsRepositoryProtocol.swift in Sources */,
 				2CF60D5F2B3EE81100C713C6 /* CategoryInfoMapper.swift in Sources */,
 				2CF60D612B3EE81100C713C6 /* MoneyAmountMapper.swift in Sources */,
 				2CF60D332B3EE3AD00C713C6 /* PlussiosCore.docc in Sources */,
@@ -1249,7 +1305,7 @@
 				2CF60D652B3EE81100C713C6 /* GSheetsClient.swift in Sources */,
 				2CF60D5B2B3EE81100C713C6 /* SheetFullRange.swift in Sources */,
 				2CF60D592B3EE81100C713C6 /* Keychain.swift in Sources */,
-				2CB26F8D2B3F655F0097B786 /* PlussiosClientProtocol.swift in Sources */,
+				2C803EEE2C94023900B6893F /* BudgetRepositoryProtocol.swift in Sources */,
 				2CF60D5D2B3EE81100C713C6 /* GSheetId.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

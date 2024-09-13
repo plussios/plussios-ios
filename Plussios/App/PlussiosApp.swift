@@ -7,13 +7,18 @@
 
 import SwiftUI
 import Sentry
+import PlussiosCore
 
 
 @main
 struct PlussiosApp: App {
+    @State private var appModel = PlussiosAppModel(
+        settingsStorage: SecureUserSettingsStorageFactory.shared.make()
+    )
+
     init() {
         SentrySDK.start { options in
-            options.dsn = "https://080dae8b56c8c9bddf71a451884137e0@o1027320.ingest.sentry.io/4506506161881088"
+            options.dsn = Secrets.shared.sentryDsn
             options.debug = true // Enabled debug when first installing is always helpful
             options.enableTracing = true 
 
@@ -22,13 +27,31 @@ struct PlussiosApp: App {
             // options.attachViewHierarchy = true // This adds the view hierarchy to the error events
         }
     }
+
     var body: some Scene {
         WindowGroup {
-            SettingsView(
-                viewModel: SettingsViewModel(
-                    settingsStorage: SecureUserSettingsStorageFactory.shared.make()
+            switch appModel.state {
+            case .loading:
+                ProgressView()
+                    .onAppear {
+                        appModel.load()
+                    }
+            case .welcome:
+                SettingsView(
+                    viewModel: SettingsViewModel(
+                        settingsStorage: SecureUserSettingsStorageFactory.shared.make()
+                    )
                 )
-            )
+            case .main(let sheetsId):
+                MainView(
+                    viewModel: MainViewModel(
+                        googleSheetsId: sheetsId,
+                        plussiosClient: PlussiosClientFactory.shared.makeClient()
+                    )
+                )
+            case .error(let error):
+                Text(error?.localizedDescription ?? "Unknown error")
+            }
         }
     }
 }

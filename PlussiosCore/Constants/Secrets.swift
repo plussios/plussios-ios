@@ -14,4 +14,6 @@ public final class Secrets {
 
     // FIXME: Use env var to get this value
     public let gSheetsApiKey = ""
+
+    public let sentryDsn = "https://080dae8b56c8c9bddf71a451884137e0@o1027320.ingest.sentry.io/4506506161881088"
 }

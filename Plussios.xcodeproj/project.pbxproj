@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B971180EDF54001AF7A833B /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 02B637443D5146D1A273626E /* Sentry */; };
+		2C2515712B4BA4EC000DFD2E /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		2C2515722B4BA4EC000DFD2E /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 02B637443D5146D1A273626E /* Sentry */; };
+		2C2515732B4BA4EC000DFD2E /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		2C2515742B4BA4EC000DFD2E /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		2C2515752B4BA4EC000DFD2E /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		2C2515762B4BA4EC000DFD2E /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		2C2515772B4BA4EC000DFD2E /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		2C2515792B4BA5CB000DFD2E /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 2C2515782B4BA5CB000DFD2E /* Sentry */; };
+		2C25157B2B4BA619000DFD2E /* PlussiosAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C25157A2B4BA619000DFD2E /* PlussiosAppModel.swift */; };
+		2C25157E2B4BA793000DFD2E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C25157D2B4BA793000DFD2E /* MainView.swift */; };
+		2C2515802B4BA920000DFD2E /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C25157F2B4BA920000DFD2E /* MainViewModel.swift */; };
+		2C2515822B4BAC48000DFD2E /* PlussiosClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2515812B4BAC48000DFD2E /* PlussiosClientFactory.swift */; };
+		2C4428682C84781E00FDF104 /* Plussios_WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4428672C84781E00FDF104 /* Plussios_WatchApp.swift */; };
+		2C44286A2C84781E00FDF104 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4428692C84781E00FDF104 /* ContentView.swift */; };
+		2C44286C2C84781E00FDF104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C44286B2C84781E00FDF104 /* Assets.xcassets */; };
+		2C44286F2C84781E00FDF104 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C44286E2C84781E00FDF104 /* Preview Assets.xcassets */; };
+		2C4428792C84781E00FDF104 /* Plussios_Watch_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4428782C84781E00FDF104 /* Plussios_Watch_Watch_AppTests.swift */; };
+		2C4428832C84781E00FDF104 /* Plussios_Watch_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4428822C84781E00FDF104 /* Plussios_Watch_Watch_AppUITests.swift */; };
+		2C4428852C84781E00FDF104 /* Plussios_Watch_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4428842C84781E00FDF104 /* Plussios_Watch_Watch_AppUITestsLaunchTests.swift */; };
+		2C4428882C84781E00FDF104 /* Plussios Watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2C4428652C84781E00FDF104 /* Plussios Watch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2C8A608E2B44144400E6343C /* ExpensesPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A608D2B44144400E6343C /* ExpensesPeriod.swift */; };
 		2C8A60902B44147100E6343C /* ExpensesTotals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A608F2B44147100E6343C /* ExpensesTotals.swift */; };
 		2C8A60942B44155900E6343C /* GeneralError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A60932B44155900E6343C /* GeneralError.swift */; };
@@ -69,10 +90,30 @@
 		2CF60D652B3EE81100C713C6 /* GSheetsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60CFB2B3EBD6D00C713C6 /* GSheetsClient.swift */; };
 		2CF60D672B3EEEBF00C713C6 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D662B3EEEBF00C713C6 /* Assembly.swift */; };
 		2CF60D6A2B3EEF9700C713C6 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF60D692B3EEF9700C713C6 /* Secrets.swift */; };
-		0B971180EDF54001AF7A833B /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 02B637443D5146D1A273626E /* Sentry */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2C4428752C84781E00FDF104 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CF60C6E2B3E9DB300C713C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C4428642C84781E00FDF104;
+			remoteInfo = "Plussios Watch Watch App";
+		};
+		2C44287F2C84781E00FDF104 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CF60C6E2B3E9DB300C713C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C4428642C84781E00FDF104;
+			remoteInfo = "Plussios Watch Watch App";
+		};
+		2C4428862C84781E00FDF104 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CF60C6E2B3E9DB300C713C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C4428642C84781E00FDF104;
+			remoteInfo = "Plussios Watch Watch App";
+		};
 		2CB26F6F2B3EF5FA0097B786 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2CF60C6E2B3E9DB300C713C6 /* Project object */;
@@ -139,6 +180,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		2C4428892C84781E00FDF104 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2C4428882C84781E00FDF104 /* Plussios Watch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CB26F712B3EF5FA0097B786 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,6 +229,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C25157A2B4BA619000DFD2E /* PlussiosAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlussiosAppModel.swift; sourceTree = "<group>"; };
+		2C25157D2B4BA793000DFD2E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2C25157F2B4BA920000DFD2E /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		2C2515812B4BAC48000DFD2E /* PlussiosClientFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlussiosClientFactory.swift; sourceTree = "<group>"; };
+		2C4428652C84781E00FDF104 /* Plussios Watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Plussios Watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4428672C84781E00FDF104 /* Plussios_WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plussios_WatchApp.swift; sourceTree = "<group>"; };
+		2C4428692C84781E00FDF104 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2C44286B2C84781E00FDF104 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C44286E2C84781E00FDF104 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C4428742C84781E00FDF104 /* Plussios Watch Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Plussios Watch Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4428782C84781E00FDF104 /* Plussios_Watch_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plussios_Watch_Watch_AppTests.swift; sourceTree = "<group>"; };
+		2C44287E2C84781E00FDF104 /* Plussios Watch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Plussios Watch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4428822C84781E00FDF104 /* Plussios_Watch_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plussios_Watch_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		2C4428842C84781E00FDF104 /* Plussios_Watch_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plussios_Watch_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2C8A60892B44139600E6343C /* CurrentExpensesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentExpensesProvider.swift; sourceTree = "<group>"; };
 		2C8A608A2B44139600E6343C /* CurrentExpensesWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentExpensesWidget.swift; sourceTree = "<group>"; };
 		2C8A608B2B44139600E6343C /* CurrentExpensesWidgetIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentExpensesWidgetIntent.swift; sourceTree = "<group>"; };
@@ -247,11 +313,32 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2C4428622C84781E00FDF104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4428712C84781E00FDF104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C44287B2C84781E00FDF104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CB26F762B3EFE0F0097B786 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B971180EDF54001AF7A833B /* Sentry in Frameworks */,
+				2C2515742B4BA4EC000DFD2E /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +346,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C2515722B4BA4EC000DFD2E /* Sentry in Frameworks */,
 				2CF60D442B3EE3AE00C713C6 /* PlussiosCore.framework in Frameworks */,
 				2CB26F7F2B3EFE0F0097B786 /* DesignSystem.framework in Frameworks */,
-				0B971180EDF54001AF7A833B /* Sentry in Frameworks */,
+				2C2515712B4BA4EC000DFD2E /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +357,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B971180EDF54001AF7A833B /* Sentry in Frameworks */,
+				2C2515752B4BA4EC000DFD2E /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +365,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B971180EDF54001AF7A833B /* Sentry in Frameworks */,
+				2C2515762B4BA4EC000DFD2E /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +377,8 @@
 				2CB26F842B3EFE1E0097B786 /* DesignSystem.framework in Frameworks */,
 				2CF60CE52B3E9F3C00C713C6 /* WidgetKit.framework in Frameworks */,
 				2CB26F6D2B3EF5FA0097B786 /* PlussiosCore.framework in Frameworks */,
-				0B971180EDF54001AF7A833B /* Sentry in Frameworks */,
+				2C2515732B4BA4EC000DFD2E /* (null) in Frameworks */,
+				2C2515792B4BA5CB000DFD2E /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,13 +395,58 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CF60D392B3EE3AE00C713C6 /* PlussiosCore.framework in Frameworks */,
-				0B971180EDF54001AF7A833B /* Sentry in Frameworks */,
+				2C2515772B4BA4EC000DFD2E /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C25157C2B4BA786000DFD2E /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				2C25157D2B4BA793000DFD2E /* MainView.swift */,
+				2C25157F2B4BA920000DFD2E /* MainViewModel.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		2C4428662C84781E00FDF104 /* Plussios Watch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				2C4428672C84781E00FDF104 /* Plussios_WatchApp.swift */,
+				2C4428692C84781E00FDF104 /* ContentView.swift */,
+				2C44286B2C84781E00FDF104 /* Assets.xcassets */,
+				2C44286D2C84781E00FDF104 /* Preview Content */,
+			);
+			path = "Plussios Watch Watch App";
+			sourceTree = "<group>";
+		};
+		2C44286D2C84781E00FDF104 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2C44286E2C84781E00FDF104 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2C4428772C84781E00FDF104 /* Plussios Watch Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C4428782C84781E00FDF104 /* Plussios_Watch_Watch_AppTests.swift */,
+			);
+			path = "Plussios Watch Watch AppTests";
+			sourceTree = "<group>";
+		};
+		2C4428812C84781E00FDF104 /* Plussios Watch Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C4428822C84781E00FDF104 /* Plussios_Watch_Watch_AppUITests.swift */,
+				2C4428842C84781E00FDF104 /* Plussios_Watch_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "Plussios Watch Watch AppUITests";
+			sourceTree = "<group>";
+		};
 		2C8A60882B44138A00E6343C /* CurrentExpensesWidget */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +480,9 @@
 				2CF60D302B3EE3AD00C713C6 /* PlussiosCore */,
 				2CF60D3E2B3EE3AE00C713C6 /* PlussiosCoreTests */,
 				2CB26F7A2B3EFE0F0097B786 /* DesignSystem */,
+				2C4428662C84781E00FDF104 /* Plussios Watch Watch App */,
+				2C4428772C84781E00FDF104 /* Plussios Watch Watch AppTests */,
+				2C4428812C84781E00FDF104 /* Plussios Watch Watch AppUITests */,
 				2CF60CAF2B3E9EB600C713C6 /* Frameworks */,
 				2CF60C772B3E9DB300C713C6 /* Products */,
 			);
@@ -361,6 +498,9 @@
 				2CF60D2F2B3EE3AD00C713C6 /* PlussiosCore.framework */,
 				2CF60D382B3EE3AD00C713C6 /* PlussiosCoreTests.xctest */,
 				2CB26F792B3EFE0F0097B786 /* DesignSystem.framework */,
+				2C4428652C84781E00FDF104 /* Plussios Watch Watch App.app */,
+				2C4428742C84781E00FDF104 /* Plussios Watch Watch AppTests.xctest */,
+				2C44287E2C84781E00FDF104 /* Plussios Watch Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -492,8 +632,8 @@
 			isa = PBXGroup;
 			children = (
 				2CF60CFD2B3EBDC600C713C6 /* PlussiosGSheetClient.swift */,
-				2CB26F8C2B3F655F0097B786 /* PlussiosClientProtocol.swift */,
 				2CB26F8E2B3F657A0097B786 /* PlussiosApiClient.swift */,
+				2CB26F8C2B3F655F0097B786 /* PlussiosClientProtocol.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -526,9 +666,11 @@
 		2CF60D1C2B3EC96300C713C6 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				2C25157C2B4BA786000DFD2E /* MainView */,
 				2CF60D232B3ED31A00C713C6 /* Factories */,
 				2CF60D1D2B3EC9FF00C713C6 /* SettingsView */,
 				2CF60CA62B3E9E4100C713C6 /* PlussiosApp.swift */,
+				2C25157A2B4BA619000DFD2E /* PlussiosAppModel.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -556,6 +698,7 @@
 			children = (
 				2CF60D242B3ED33700C713C6 /* GSheetsClientFactory.swift */,
 				2CF60D262B3ED3D900C713C6 /* SecureUserSettingsStorageFactory.swift */,
+				2C2515812B4BAC48000DFD2E /* PlussiosClientFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -624,6 +767,59 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2C4428642C84781E00FDF104 /* Plussios Watch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C4428902C84781E00FDF104 /* Build configuration list for PBXNativeTarget "Plussios Watch Watch App" */;
+			buildPhases = (
+				2C4428612C84781E00FDF104 /* Sources */,
+				2C4428622C84781E00FDF104 /* Frameworks */,
+				2C4428632C84781E00FDF104 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Plussios Watch Watch App";
+			productName = "Plussios Watch Watch App";
+			productReference = 2C4428652C84781E00FDF104 /* Plussios Watch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C4428732C84781E00FDF104 /* Plussios Watch Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C4428912C84781E00FDF104 /* Build configuration list for PBXNativeTarget "Plussios Watch Watch AppTests" */;
+			buildPhases = (
+				2C4428702C84781E00FDF104 /* Sources */,
+				2C4428712C84781E00FDF104 /* Frameworks */,
+				2C4428722C84781E00FDF104 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C4428762C84781E00FDF104 /* PBXTargetDependency */,
+			);
+			name = "Plussios Watch Watch AppTests";
+			productName = "Plussios Watch Watch AppTests";
+			productReference = 2C4428742C84781E00FDF104 /* Plussios Watch Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C44287D2C84781E00FDF104 /* Plussios Watch Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C4428922C84781E00FDF104 /* Build configuration list for PBXNativeTarget "Plussios Watch Watch AppUITests" */;
+			buildPhases = (
+				2C44287A2C84781E00FDF104 /* Sources */,
+				2C44287B2C84781E00FDF104 /* Frameworks */,
+				2C44287C2C84781E00FDF104 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C4428802C84781E00FDF104 /* PBXTargetDependency */,
+			);
+			name = "Plussios Watch Watch AppUITests";
+			productName = "Plussios Watch Watch AppUITests";
+			productReference = 2C44287E2C84781E00FDF104 /* Plussios Watch Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		2CB26F782B3EFE0F0097B786 /* DesignSystem */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CB26F812B3EFE0F0097B786 /* Build configuration list for PBXNativeTarget "DesignSystem" */;
@@ -652,6 +848,7 @@
 				2CF60CC62B3E9EB800C713C6 /* Embed Foundation Extensions */,
 				2CF60D492B3EE3AE00C713C6 /* Embed Frameworks */,
 				B7838887CECA4613BA992E34 /* Upload Debug Symbols to Sentry */,
+				2C4428892C84781E00FDF104 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
@@ -659,14 +856,15 @@
 				2CF60CF42B3E9F3D00C713C6 /* PBXTargetDependency */,
 				2CF60D432B3EE3AE00C713C6 /* PBXTargetDependency */,
 				2CB26F7E2B3EFE0F0097B786 /* PBXTargetDependency */,
+				2C4428872C84781E00FDF104 /* PBXTargetDependency */,
 			);
 			name = Plussios;
-			productName = Plussios;
-			productReference = 2CF60C762B3E9DB300C713C6 /* Plussios.app */;
-			productType = "com.apple.product-type.application";
 			packageProductDependencies = (
 				02B637443D5146D1A273626E /* Sentry */,
 			);
+			productName = Plussios;
+			productReference = 2CF60C762B3E9DB300C713C6 /* Plussios.app */;
+			productType = "com.apple.product-type.application";
 		};
 		2CF60C872B3E9DB500C713C6 /* PlussiosTests */ = {
 			isa = PBXNativeTarget;
@@ -720,6 +918,9 @@
 				2CB26F872B3EFE1E0097B786 /* PBXTargetDependency */,
 			);
 			name = PlussiosWidgetExtension;
+			packageProductDependencies = (
+				2C2515782B4BA5CB000DFD2E /* Sentry */,
+			);
 			productName = PlussiosWidgetExtension;
 			productReference = 2CF60CE42B3E9F3C00C713C6 /* PlussiosWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -768,9 +969,20 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1510;
+				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
+					2C4428642C84781E00FDF104 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					2C4428732C84781E00FDF104 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 2C4428642C84781E00FDF104;
+					};
+					2C44287D2C84781E00FDF104 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 2C4428642C84781E00FDF104;
+					};
 					2CB26F782B3EFE0F0097B786 = {
 						CreatedOnToolsVersion = 15.1;
 						LastSwiftMigration = 1510;
@@ -808,6 +1020,9 @@
 				Base,
 			);
 			mainGroup = 2CF60C6D2B3E9DB300C713C6;
+			packageReferences = (
+				AFC35CBC900744CB972C51B0 /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
+			);
 			productRefGroup = 2CF60C772B3E9DB300C713C6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -819,14 +1034,37 @@
 				2CF60D2E2B3EE3AD00C713C6 /* PlussiosCore */,
 				2CF60D372B3EE3AD00C713C6 /* PlussiosCoreTests */,
 				2CB26F782B3EFE0F0097B786 /* DesignSystem */,
-			);
-			packageReferences = (
-				AFC35CBC900744CB972C51B0 /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
+				2C4428642C84781E00FDF104 /* Plussios Watch Watch App */,
+				2C4428732C84781E00FDF104 /* Plussios Watch Watch AppTests */,
+				2C44287D2C84781E00FDF104 /* Plussios Watch Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2C4428632C84781E00FDF104 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C44286F2C84781E00FDF104 /* Preview Assets.xcassets in Resources */,
+				2C44286C2C84781E00FDF104 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4428722C84781E00FDF104 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C44287C2C84781E00FDF104 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CB26F772B3EFE0F0097B786 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -882,7 +1120,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B7838887CECA4613BA992E34 /* Upload Debug Symbols to Sentry */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+			);
+			name = "Upload Debug Symbols to Sentry";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script is responsable to upload debug symbols and source context for Sentry.\nif which sentry-cli >/dev/null; then\nexport SENTRY_ORG=plussios\nexport SENTRY_PROJECT=plussios-ios\nERROR=$(sentry-cli debug-files upload --include-sources \"$DWARF_DSYM_FOLDER_PATH\" 2>&1 >/dev/null)\nif [ ! $? -eq 0 ]; then\necho \"warning: sentry-cli - $ERROR\"\nfi\nelse\necho \"warning: sentry-cli not installed, download from https://github.com/getsentry/sentry-cli/releases\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		2C4428612C84781E00FDF104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C44286A2C84781E00FDF104 /* ContentView.swift in Sources */,
+				2C4428682C84781E00FDF104 /* Plussios_WatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4428702C84781E00FDF104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4428792C84781E00FDF104 /* Plussios_Watch_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C44287A2C84781E00FDF104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4428852C84781E00FDF104 /* Plussios_Watch_Watch_AppUITestsLaunchTests.swift in Sources */,
+				2C4428832C84781E00FDF104 /* Plussios_Watch_Watch_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CB26F752B3EFE0F0097B786 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -896,10 +1178,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CF60D252B3ED33700C713C6 /* GSheetsClientFactory.swift in Sources */,
+				2C25157E2B4BA793000DFD2E /* MainView.swift in Sources */,
+				2C2515822B4BAC48000DFD2E /* PlussiosClientFactory.swift in Sources */,
 				2CF60CA92B3E9E6A00C713C6 /* SettingsView.swift in Sources */,
 				2CF60D1F2B3ECBBE00C713C6 /* SettingsViewModel.swift in Sources */,
 				2CF60CA72B3E9E4100C713C6 /* PlussiosApp.swift in Sources */,
 				2CF60D272B3ED3D900C713C6 /* SecureUserSettingsStorageFactory.swift in Sources */,
+				2C25157B2B4BA619000DFD2E /* PlussiosAppModel.swift in Sources */,
+				2C2515802B4BA920000DFD2E /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -979,6 +1265,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2C4428762C84781E00FDF104 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C4428642C84781E00FDF104 /* Plussios Watch Watch App */;
+			targetProxy = 2C4428752C84781E00FDF104 /* PBXContainerItemProxy */;
+		};
+		2C4428802C84781E00FDF104 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C4428642C84781E00FDF104 /* Plussios Watch Watch App */;
+			targetProxy = 2C44287F2C84781E00FDF104 /* PBXContainerItemProxy */;
+		};
+		2C4428872C84781E00FDF104 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C4428642C84781E00FDF104 /* Plussios Watch Watch App */;
+			targetProxy = 2C4428862C84781E00FDF104 /* PBXContainerItemProxy */;
+		};
 		2CB26F702B3EF5FA0097B786 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2CF60D2E2B3EE3AD00C713C6 /* PlussiosCore */;
@@ -1027,6 +1328,140 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		2C44288A2C84781E00FDF104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Plussios Watch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 5C9TGFA48W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Plussios Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.plussios.Plussios;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plussios.Plussios.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		2C44288B2C84781E00FDF104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Plussios Watch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 5C9TGFA48W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Plussios Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.plussios.Plussios;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plussios.Plussios.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		2C44288C2C84781E00FDF104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "family.sidel.Plussios-Watch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Plussios Watch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Plussios Watch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		2C44288D2C84781E00FDF104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "family.sidel.Plussios-Watch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Plussios Watch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Plussios Watch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		2C44288E2C84781E00FDF104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "family.sidel.Plussios-Watch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Plussios Watch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		2C44288F2C84781E00FDF104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "family.sidel.Plussios-Watch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Plussios Watch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
 		2CB26F822B3EFE0F0097B786 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1227,6 +1662,7 @@
 				CODE_SIGN_ENTITLEMENTS = Plussios/Plussios.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Plussios/Preview Content\"";
 				DEVELOPMENT_TEAM = 5C9TGFA48W;
 				ENABLE_PREVIEWS = YES;
@@ -1237,7 +1673,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1249,7 +1685,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 			};
 			name = Debug;
 		};
@@ -1263,6 +1698,7 @@
 				CODE_SIGN_ENTITLEMENTS = Plussios/Plussios.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Plussios/Preview Content\"";
 				DEVELOPMENT_TEAM = 5C9TGFA48W;
 				ENABLE_PREVIEWS = YES;
@@ -1273,7 +1709,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1284,7 +1720,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 			};
 			name = Release;
 		};
@@ -1297,7 +1732,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5C9TGFA48W;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.plussios.PlussiosTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1317,7 +1752,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5C9TGFA48W;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.plussios.PlussiosTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1379,7 +1814,7 @@
 				INFOPLIST_FILE = PlussiosWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PlussiosWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1408,7 +1843,7 @@
 				INFOPLIST_FILE = PlussiosWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PlussiosWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1535,6 +1970,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2C4428902C84781E00FDF104 /* Build configuration list for PBXNativeTarget "Plussios Watch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C44288A2C84781E00FDF104 /* Debug */,
+				2C44288B2C84781E00FDF104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C4428912C84781E00FDF104 /* Build configuration list for PBXNativeTarget "Plussios Watch Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C44288C2C84781E00FDF104 /* Debug */,
+				2C44288D2C84781E00FDF104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C4428922C84781E00FDF104 /* Build configuration list for PBXNativeTarget "Plussios Watch Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C44288E2C84781E00FDF104 /* Debug */,
+				2C44288F2C84781E00FDF104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2CB26F812B3EFE0F0097B786 /* Build configuration list for PBXNativeTarget "DesignSystem" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1609,24 +2071,6 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		B7838887CECA4613BA992E34 /* Upload Debug Symbols to Sentry */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			name = "Upload Debug Symbols to Sentry";
-			inputPaths = (
-				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
-			);
-			outputPaths = (
-			);
-			shellPath = /bin/sh;
-			shellScript = "# This script is responsable to upload debug symbols and source context for Sentry.\nif which sentry-cli >/dev/null; then\nexport SENTRY_ORG=plussios\nexport SENTRY_PROJECT=plussios-ios\nERROR=$(sentry-cli debug-files upload --include-sources \"$DWARF_DSYM_FOLDER_PATH\" 2>&1 >/dev/null)\nif [ ! $? -eq 0 ]; then\necho \"warning: sentry-cli - $ERROR\"\nfi\nelse\necho \"warning: sentry-cli not installed, download from https://github.com/getsentry/sentry-cli/releases\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin XCRemoteSwiftPackageReference section */
 		AFC35CBC900744CB972C51B0 /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -1640,6 +2084,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		02B637443D5146D1A273626E /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFC35CBC900744CB972C51B0 /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = Sentry;
+		};
+		2C2515782B4BA5CB000DFD2E /* Sentry */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AFC35CBC900744CB972C51B0 /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
 			productName = Sentry;

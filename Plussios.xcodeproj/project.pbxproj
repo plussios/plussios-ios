@@ -792,11 +792,13 @@
 /* Begin PBXShellScriptBuildPhase section */
 		B7838887CECA4613BA992E34 /* Upload Debug Symbols to Sentry */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/.sentryclirc",
 			);
 			name = "Upload Debug Symbols to Sentry";
 			outputPaths = (

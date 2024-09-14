@@ -19,8 +19,8 @@ struct PlussiosApp: App {
     init() {
         SentrySDK.start { options in
             options.dsn = Secrets.shared.sentryDsn
-            options.debug = true // Enabled debug when first installing is always helpful
-            options.enableTracing = true 
+            options.debug = false
+            options.tracesSampleRate = 1
 
             // Uncomment the following lines to add more data to your events
             // options.attachScreenshot = true // This adds a screenshot to the error events

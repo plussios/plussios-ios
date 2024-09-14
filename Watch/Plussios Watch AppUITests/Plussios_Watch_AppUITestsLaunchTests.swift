@@ -1,13 +1,13 @@
 //
-//  Plussios_Watch_Watch_AppUITestsLaunchTests.swift
-//  Plussios Watch Watch AppUITests
+//  Plussios_Watch_AppUITestsLaunchTests.swift
+//  Plussios Watch AppUITests
 //
-//  Created by Stan Sidel on 9/1/24.
+//  Created by Stan Sidel on 9/14/24.
 //
 
 import XCTest
 
-final class Plussios_Watch_Watch_AppUITestsLaunchTests: XCTestCase {
+final class Plussios_Watch_AppUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

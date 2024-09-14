@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  Plussios Watch Watch App
+//  Plussios Watch App
 //
-//  Created by Stan Sidel on 9/1/24.
+//  Created by Stan Sidel on 9/14/24.
 //
 
 import SwiftUI

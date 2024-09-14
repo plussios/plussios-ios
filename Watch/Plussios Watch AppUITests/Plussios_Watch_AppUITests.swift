@@ -1,13 +1,13 @@
 //
-//  Plussios_Watch_Watch_AppUITests.swift
-//  Plussios Watch Watch AppUITests
+//  Plussios_Watch_AppUITests.swift
+//  Plussios Watch AppUITests
 //
-//  Created by Stan Sidel on 9/1/24.
+//  Created by Stan Sidel on 9/14/24.
 //
 
 import XCTest
 
-final class Plussios_Watch_Watch_AppUITests: XCTestCase {
+final class Plussios_Watch_AppUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

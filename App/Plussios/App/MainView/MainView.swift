@@ -18,7 +18,7 @@ struct MainView: View {
 //                .onAppear {
 //                    viewModel.loadData()
 //                }
-        case .data(let data):
+        case .data:
             Text("TODO")
         case .error(let error):
             Text("Error: \(error?.localizedDescription ?? "unknown")")

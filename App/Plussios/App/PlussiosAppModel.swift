@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+
+import Factory
+
 import PlussiosCore
 
 final class PlussiosAppModel: ObservableObject {
@@ -18,11 +21,8 @@ final class PlussiosAppModel: ObservableObject {
 
     @Published var state: State = .loading
 
-    private let settingsStorage: SecureUserSettingsStorageProtocol
-
-    init(settingsStorage: SecureUserSettingsStorageProtocol) {
-        self.settingsStorage = settingsStorage
-    }
+    @Injected(\.userSettingsStorage)
+    private var settingsStorage: SecureUserSettingsStorageProtocol
 
     func load() {
         Task {

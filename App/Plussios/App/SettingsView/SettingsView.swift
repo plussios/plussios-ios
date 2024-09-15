@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+
+import Factory
+
 import PlussiosCore
 
 struct SettingsView: View {
@@ -73,7 +76,7 @@ struct SettingsView: View {
             guard let sheetId else { return }
 
             let client = PlussiosApiClient(
-                userSettingsStorage: SecureUserSettingsStorageFactory.shared.make()
+                userSettingsStorage: Container.shared.userSettingsStorage()
             )
 
             do {
@@ -104,7 +107,7 @@ struct SettingsView: View {
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView(viewModel: SettingsViewModel(settingsStorage: SecureUserSettingsStorageMock()))
+        SettingsView(viewModel: SettingsViewModel())
     }
 }
 

@@ -12,9 +12,7 @@ import PlussiosCore
 
 @main
 struct PlussiosApp: App {
-    @StateObject private var appModel = PlussiosAppModel(
-        settingsStorage: SecureUserSettingsStorageFactory.shared.make()
-    )
+    @StateObject private var appModel = PlussiosAppModel()
 
     init() {
         SentrySDK.start { options in
@@ -38,16 +36,11 @@ struct PlussiosApp: App {
                     }
             case .welcome, .main:
                 SettingsView(
-                    viewModel: SettingsViewModel(
-                        settingsStorage: SecureUserSettingsStorageFactory.shared.make()
-                    )
+                    viewModel: SettingsViewModel()
                 )
 //            case .main:
 //                MainView(
-//                    viewModel: MainViewModel(
-//                        budgetRepository: BudgetRepositoryFactory.shared.make(),
-//                        expenseTotalsRepository: ExpenseTotalsRepositoryFactory.shared.make()
-//                    )
+//                    viewModel: MainViewModel()
 //                )
             case .error(let error):
                 Text(error?.localizedDescription ?? "Unknown error")

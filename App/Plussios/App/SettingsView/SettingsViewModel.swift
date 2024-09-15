@@ -6,14 +6,14 @@
 //
 
 import Foundation
+
+import Factory
+
 import PlussiosCore
 
 final class SettingsViewModel: ObservableObject {
-    private let settingsStorage: SecureUserSettingsStorageProtocol
-
-    init(settingsStorage: SecureUserSettingsStorageProtocol) {
-        self.settingsStorage = settingsStorage
-    }
+    @Injected(\.userSettingsStorage)
+    private var settingsStorage: SecureUserSettingsStorageProtocol
 
     func loadSheetsURL() async throws -> String? {
         try await loadSheetsId()?.shareableLink

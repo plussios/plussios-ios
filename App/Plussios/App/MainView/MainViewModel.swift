@@ -6,6 +6,9 @@
 //
 
 import Foundation
+
+import Factory
+
 import PlussiosCore
 
 struct MainViewData {
@@ -22,16 +25,12 @@ final class MainViewModel: ObservableObject {
 
     @Published var state: State = .loading
 
-    private let budgetRepository: BudgetRepositoryProtocol
-    private let expenseTotalsRepository: ExpenseTotalsRepositoryProtocol
+    @Injected(\.budgetRepository)
+    private var budgetRepository: BudgetRepositoryProtocol
 
-    init(
-        budgetRepository: BudgetRepositoryProtocol,
-        expenseTotalsRepository: ExpenseTotalsRepositoryProtocol
-    ) {
-        self.budgetRepository = budgetRepository
-        self.expenseTotalsRepository = expenseTotalsRepository
-    }
+    @Injected(\.expenseTotalsRepository)
+    private var expenseTotalsRepository: ExpenseTotalsRepositoryProtocol
+
 
     func loadData() {
         Task {

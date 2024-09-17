@@ -15,12 +15,16 @@ extension Container {
         self { self.apiClient() }
     }
 
-    private var keychain: Factory<KeychainProtocol> {
-        self { Keychain() }
+    var watchSettings: Factory<WatchSettings> {
+        self { WatchSettings() }
             .singleton
     }
 
-    private var userSettingsStorage: Factory<SecureUserSettingsStorageProtocol> {
+    private var keychain: Factory<KeychainProtocol> {
+        self { Keychain() }
+    }
+
+    var userSettingsStorage: Factory<SecureUserSettingsStorageProtocol> {
         self { SecureUserSettingsStorage(keychain: self.keychain()) }
             .singleton
     }

@@ -11,7 +11,7 @@ public enum GSheetIdError: Error {
     case invalidURL
 }
 
-public struct GSheetId: Codable {
+public struct GSheetId: Codable, Equatable {
     public let sheetId: String
 
     public init(sheetId: String) {
@@ -38,4 +38,8 @@ public struct GSheetId: Codable {
     public var shareableLink: String {
         "https://docs.google.com/spreadsheets/d/\(sheetId)"
     }
+
+    public static var empty: GSheetId { .init(sheetId: "") }
+
+    public var isEmpty: Bool { sheetId.isEmpty }
 }

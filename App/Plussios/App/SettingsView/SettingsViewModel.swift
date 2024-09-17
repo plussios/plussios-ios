@@ -15,6 +15,9 @@ final class SettingsViewModel: ObservableObject {
     @Injected(\.userSettingsStorage)
     private var settingsStorage: SecureUserSettingsStorageProtocol
 
+    @Injected(\.watchConnector)
+    private var watchConnector: WatchConnectorProtocol
+
     func loadSheetsURL() async throws -> String? {
         try await loadSheetsId()?.shareableLink
     }
@@ -24,19 +27,24 @@ final class SettingsViewModel: ObservableObject {
             return nil
         }
 
+        watchConnector.sendToWatch(sheetId: settings.sheetId)
+
         return settings.sheetId
     }
 
     func set(googleSheetsURL: String) async throws {
         var settings = try await settingsStorage.load() ?? SecureUserSettings()
 
+        let sheetId: GSheetId
         do {
-            let id = try GSheetId(sheetURL: googleSheetsURL)
-            settings.sheetId = id
+            sheetId = try GSheetId(sheetURL: googleSheetsURL)
+            settings.sheetId = sheetId
         } catch {
             throw error
         }
 
         try await settingsStorage.save(settings)
+
+        watchConnector.sendToWatch(sheetId: sheetId)
     }
 }

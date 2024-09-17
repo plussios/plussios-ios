@@ -11,7 +11,7 @@ import WatchConnectivity
 import PlussiosCore
 
 protocol WatchConnectorProtocol {
-    func sendToWatch(sheetId: GSheetId)
+    func sendToWatch(sheetId: GSheetId?)
 }
 
 final class WatchConnector: NSObject, WCSessionDelegate, WatchConnectorProtocol {
@@ -26,25 +26,27 @@ final class WatchConnector: NSObject, WCSessionDelegate, WatchConnectorProtocol 
         }
     }
     
-    func sendToWatch(sheetId: GSheetId) {
+    func sendToWatch(sheetId: GSheetId?) {
         if WCSession.default.isReachable {
-            WCSession.default.sendMessage(["sheetURL": sheetId], replyHandler: nil, errorHandler: { error in
+            WCSession.default.sendMessage(["sheetId": sheetId?.sheetId ?? ""], replyHandler: nil, errorHandler: { error in
                 print("Error sending URL to Watch: \(error)")
             })
+        } else {
+            WCSession.default.transferUserInfo(["sheetId": sheetId?.sheetId ?? ""])
         }
     }
     
     // WCSessionDelegate methods
 
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: (any Error)?) {
-
+        print(#function)
     }
 
     func sessionDidBecomeInactive(_ session: WCSession) {
-
+        print(#function)
     }
 
     func sessionDidDeactivate(_ session: WCSession) {
-
+        print(#function)
     }
 }

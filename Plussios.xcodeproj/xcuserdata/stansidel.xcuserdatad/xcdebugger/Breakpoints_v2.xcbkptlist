@@ -126,8 +126,8 @@
             filePath = "Watch/Plussios Watch App/BudgetTotals/BudgetTotalsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -142,8 +142,8 @@
             filePath = "Watch/Plussios Watch App/BudgetTotals/BudgetTotalsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -178,64 +178,6 @@
             endingLineNumber = "27"
             landmarkName = "load()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "27680C09-1A50-4C5B-A788-F31BB664493E - 7912c9dafcf0a094"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Plussios_Watch_App.WatchSettings.load() async -&gt; ()"
-                  moduleName = "Plussios Watch App.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/stansidel/projects/plussios-ios/Watch/Plussios%20Watch%20App/Settings/WatchSettings.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27">
-               </Location>
-               <Location
-                  uuid = "27680C09-1A50-4C5B-A788-F31BB664493E - ba4b9f496bcf0da1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) await resume partial function for Plussios_Watch_App.WatchSettings.load() async -&gt; ()"
-                  moduleName = "Plussios Watch App.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/stansidel/projects/plussios-ios/Watch/Plussios%20Watch%20App/Settings/WatchSettings.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27">
-               </Location>
-               <Location
-                  uuid = "27680C09-1A50-4C5B-A788-F31BB664493E - ebd91bcb93691292"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(5) suspend resume partial function for Plussios_Watch_App.WatchSettings.load() async -&gt; ()"
-                  moduleName = "Plussios Watch App.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/stansidel/projects/plussios-ios/Watch/Plussios%20Watch%20App/Settings/WatchSettings.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27">
-               </Location>
-               <Location
-                  uuid = "27680C09-1A50-4C5B-A788-F31BB664493E - ba55b2d09595f382"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor @Sendable () -&gt; () in Plussios_Watch_App.WatchSettings.load() async -&gt; ()"
-                  moduleName = "Plussios Watch App.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/stansidel/projects/plussios-ios/Watch/Plussios%20Watch%20App/Settings/WatchSettings.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -252,36 +194,6 @@
             endingLineNumber = "51"
             landmarkName = "setSheetId(from:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "CF9EC219-453E-458F-8D01-29E65BF7B3CF - e80576712b46b242"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #1 () async -&gt; () in Plussios_Watch_App.WatchConnector.setSheetId(from: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
-                  moduleName = "Plussios Watch App.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/stansidel/projects/plussios-ios/Watch/Plussios%20Watch%20App/WatchConnectivity/WatchConnector.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51">
-               </Location>
-               <Location
-                  uuid = "CF9EC219-453E-458F-8D01-29E65BF7B3CF - 8a1122ad370616c9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for closure #1 () async -&gt; () in Plussios_Watch_App.WatchConnector.setSheetId(from: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
-                  moduleName = "Plussios Watch App.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/stansidel/projects/plussios-ios/Watch/Plussios%20Watch%20App/WatchConnectivity/WatchConnector.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

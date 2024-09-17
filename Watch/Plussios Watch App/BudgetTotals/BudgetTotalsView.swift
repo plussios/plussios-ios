@@ -9,6 +9,8 @@ import SwiftUI
 
 import Factory
 
+import PlussiosCore
+
 struct BudgetTotalsView: View {
     @StateObject private var viewModel = BudgetTotalsViewModel()
 
@@ -25,7 +27,7 @@ struct BudgetTotalsView: View {
             case .missingSheetId:
                 Text("Set your G.Sheet URL in the iOS App")
             case .data(let totals):
-                Text("Date: \(totals.date.ISO8601Format())")
+                BudgetTotalsDataView(totals: totals)
             case .error(let error):
                 VStack {
                     Text("Error:")
@@ -40,6 +42,38 @@ struct BudgetTotalsView: View {
     }
 }
 
+
+private final class MockBudgetRepository: BudgetRepositoryProtocol {
+    var mockTotals: BudgetTotals = BudgetTotals(date: Date(), entries: [])
+
+    func loadCurrentBudget() async throws -> BudgetTotals {
+        mockTotals
+    }
+}
+
+private final class MockUserSettingsStorage: SecureUserSettingsStorageProtocol {
+    var mockSettings: SecureUserSettings?
+    var latestSavedSettings: SecureUserSettings?
+
+    func save(_ userSettings: SecureUserSettings) async throws {
+        latestSavedSettings = userSettings
+    }
+    
+    func load() async throws -> SecureUserSettings? {
+        mockSettings
+    }
+}
+
 #Preview {
-    BudgetTotalsView()
+    let budgetRepository = MockBudgetRepository()
+    let userSettingsStorage = MockUserSettingsStorage()
+    let _ = Container.shared.budgetRepository.register { budgetRepository }
+    let _ = Container.shared.userSettingsStorage.register { userSettingsStorage }
+
+    // Set a non-nil sheetId in the user settings and register a new WatchSettings to trigger
+    // `onChange` event for `watchSettings.sheetId`.
+    userSettingsStorage.mockSettings = SecureUserSettings(sheetId: GSheetId(sheetId: "123"))
+    let _ = Container.shared.watchSettings.register { WatchSettings() }
+
+    return BudgetTotalsView()
 }

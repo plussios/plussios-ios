@@ -280,6 +280,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				"Plussios Watch App/Assets.xcassets",
+				"Plussios Watch App/BudgetTotals/BudgetTotalsDataView.swift",
 				"Plussios Watch App/BudgetTotals/BudgetTotalsView.swift",
 				"Plussios Watch App/BudgetTotals/BudgetTotalsViewModel.swift",
 				"Plussios Watch App/ContentView.swift",
